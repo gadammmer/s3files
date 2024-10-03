@@ -1,1 +1,1 @@
-# Repo to extract files from s3 and ec2
+# Repo to extract files from ec2
