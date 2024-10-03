@@ -1,0 +1,5 @@
+TOURISM_IND_KEY,TOURISM_IND_ID,TOURISM_IND_SP_DES,TOURISM_IND_EN_DES,
+1,STY,Estancias,Stays,
+2,LSTY,Duración de la estancia,Length of stay,
+3,NGT_SP,Pernoctaciones,Nights spent,
+-3,**********,No Informado,Not Informed,

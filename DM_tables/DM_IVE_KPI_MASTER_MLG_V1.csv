@@ -1,0 +1,88 @@
+KPI_KEY,LANGUAGE_KEY,KPI_DES,
+-3,1,No Informado
+1,1,Número
+2,1,Plazas
+3,1,Casas centrales
+4,1,Sucursales
+5,1,Sucursales con sede en la Comunitat Valenciana
+6,1,Sucursales con sede fuera de la Comunitat Valenciana
+7,1,Total
+8,1,Acumulado en lo que va de año
+9,1,Tasa de variación anual
+10,1,Tasa de variación acumulada
+11,1,Dato base
+12,1,Viajeros
+13,1,Pernoctaciones
+14,1,Estancia media
+15,1,Grado de ocupación por apartamentos en fin de semana
+16,1,Número de parcelas
+17,1,Número de establecimientos abiertos estimados
+18,1,Grado de ocupación por plazas
+19,1,Grado de ocupación de parcelas en fin de semana
+20,1,Número de habitaciones estimadas
+21,1,Número de plazas estimadas
+22,1,Grado de ocupación por habitaciones
+23,1,Parcelas ocupadas
+24,1,Grado de ocupación por parcelas
+25,1,Grado de ocupación por plazas en fin de semana
+26,1,Personal empleado
+27,1,Número de apartamentos estimados
+28,1,Grado de ocupación por apartamentos
+-3,2,Not Informed
+1,2,Number
+2,2,Places
+3,2,Central houses
+4,2,Branch offices
+5,2,Branches based in the Valencian Community
+6,2,Branches based outside the Valencian Community
+7,2,Total
+8,2,Accumulated so far this year
+9,2,Annual variation rate
+10,2,Cumulative variation rate
+11,2,Base data
+12,2,Travellers
+13,2,Overnight stays
+14,2,Medium stay
+15,2,Occupancy rate by apartments on weekends
+16,2,Number of plots
+17,2,Estimated number of open establishments
+18,2,Occupancy rate by places
+19,2,Degree of occupancy of plots on weekends
+20,2,Estimated number of rooms
+21,2,Estimated number of places
+22,2,Occupancy rate by room
+23,2,Occupied plots
+24,2,Degree of occupancy by plots
+25,2,Occupancy rate by places on weekends
+26,2,Employed personnel
+27,2,Estimated number of apartments
+28,2,Occupancy rate by apartments
+-3,3,No Informat
+1,3,Número
+2,3,Places
+3,3,Cases centrals
+4,3,Sucursals
+5,3,Sucursals amb seu a la Comunitat Valenciana
+6,3,Sucursals amb seu fora de la Comunitat Valenciana
+7,3,Total
+8,3,Acumulat aquest any
+9,3,Taxa de variació anual
+10,3,Taxa de variació acumulada
+11,3,Dada base
+12,3,Viatgers
+13,3,Pernoctacions
+14,3,Estància mija
+15,3,Grau d'ocupació per apartaments cap de setmana
+16,3,Nombre de parcel·les
+17,3,Nombre d’establiments oberts estimats
+18,3,Grau d’ocupació per places
+19,3,Grau d'ocupació de parcel·les en cap de setmana
+20,3,Nombre d'habitacions estimades
+21,3,Nombre de places estimades
+22,3,Grau d’ocupació per habitacions
+23,3,Parcel·les ocupades
+24,3,Grau docupació per parcel·les
+25,3,Grau docupació per places en cap de setmana
+26,3,Personal empleat
+27,3,Nombre d'apartaments estimats
+28,3,Grau d'ocupació per apartaments

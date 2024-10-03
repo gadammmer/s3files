@@ -1,0 +1,16 @@
+KPI_KEY,KPI_ID,KPI_DES
+-3,*********,No Informado
+1,Numero,Número
+2,Plazas,Plazas
+3,CasasCentrales,Casas centrales
+4,Sucursales,Sucursales
+5,Sucursales_Dentro,Sucursales con sede en la Comunitat Valenciana
+6,Sucursales_Fuera,Sucursales con sede fuera de la Comunitat Valenciana
+7,Total,Total
+8,Acumulado en lo que va de año,Acumulado en lo que va de año
+9,Tasa de variación anual,Tasa de variación anual
+10,Tasa de variación acumulada,Tasa de variación acumulada
+11,Dato base,Dato base
+12,Viajeros,Viajeros
+13,Pernoctaciones,Pernoctaciones
+14,Estancia media,Estancia media

@@ -1,0 +1,12 @@
+HOUSING_TYPE_KEY,HOUSING_TYPE_ID,HOUSING_TYPE_DES,PARENT_HOUSING_TYPE_KEY
+-3,*********,No Informado,-3
+1,De mercado,De mercado,7
+2,No de mercado,No de mercado,7
+3,Vivienda en alquiler,Vivienda en alquiler,1
+4,Hotelero,Hotelero,1
+5,Vivienda de familiares o amigos,Vivienda de familiares o amigos,2
+6,Vivienda en propiedad,Vivienda en propiedad,2
+7,Total,Todos los alojamientos,7
+8,Resto de mercado,Resto de mercado,1
+9,Resto de no mercado,Resto de no mercado,2
+
