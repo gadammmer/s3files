@@ -1,0 +1,752 @@
+COUNTRYCODE,ID,REGIONCODE,COUNTRYNAME,ISO_CODE,SUBCONTINENTCODE,LOAD_TIME,LANGUAGE_KEY
+AD,1,,Andorra,AND,,,2
+AE,2,,United Arab Emirates,ARE,,,2
+AF,3,,Afghanistan,AFG,,,2
+AG,4,,Antigua and Barbuda,ATG,,,2
+AI,5,,Anguilla,AIA,,,2
+AL,6,,Albania,ALB,,,2
+AM,7,,Armenia,ARM,,,2
+AO,8,,Angola,AGO,,,2
+AQ,9,,Antarctica,ATA,,,2
+AR,10,,Argentina,ARG,,,2
+AS,11,,American Samoa,ASM,,,2
+AT,12,,Austria,AUT,,,2
+AU,13,,Australia,AUS,,,2
+AW,14,,Aruba,ABW,,,2
+AZ,15,,Azerbaijan,AZE,,,2
+BA,16,,Bosnia and Herzegovina,BIH,,,2
+BB,17,,Barbados,BRB,,,2
+BD,18,,Bangladesh,BGD,,,2
+BE,19,,Belgium,BEL,,,2
+BF,20,,Burkina Faso,BFA,,,2
+BG,21,,Bulgaria,BGR,,,2
+BH,22,,Bahrain,BHR,,,2
+BI,23,,Burundi,BDI,,,2
+BJ,24,,Benin,BEN,,,2
+BL,25,,Saint Barthelemy,BLM,,,2
+BM,26,,Bermuda,BMU,,,2
+BN,27,,Brunei,BRN,,,2
+BO,28,,Bolivia,BOL,,,2
+BQ,29,,Saba,BES,,,2
+BR,30,,Brazil,BRA,,,2
+BS,31,,Bahamas,BHS,,,2
+BT,32,,Bhutan,BTN,,,2
+BW,33,,Botswana,BWA,,,2
+BY,34,,Belarus,BLR,,,2
+BZ,35,,Belize,BLZ,,,2
+CA,36,,Canada,CAN,,,2
+CC,37,,Cocos (Keeling) Islands,CCK,,,2
+CD,38,,Congo,COD,,,2
+CF,39,,Central African Republic,CAF,,,2
+CG,40,,Congo,COG,,,2
+CH,41,,Switzerland,CHE,,,2
+CI,42,,Ivory Coast,CIV,,,2
+CK,43,,Cook Islands,COK,,,2
+CL,44,,Chile,CHL,,,2
+CM,45,,Cameroon,CMR,,,2
+CN,46,,China,CHN,,,2
+CO,47,,Colombia,COL,,,2
+CR,48,,Costa Rica,CRI,,,2
+CU,49,,Cuba,CUB,,,2
+CV,50,,Cape Verde,CPV,,,2
+CW,51,,Curaçao,CUW,,,2
+CX,52,,Christmas Island,CXR,,,2
+CY,53,,Cyprus,CYP,,,2
+CZ,54,,Czech Republic,CZE,,,2
+DE,55,,Germany,DEU,,,2
+DJ,56,,Djibouti,DJI,,,2
+DK,57,,Denmark,DNK,,,2
+DM,58,,Dominica,DMA,,,2
+DO,59,,Dominican Republic,DOM,,,2
+DZ,60,,Algeria,DZA,,,2
+EC,61,,Ecuador,ECU,,,2
+EE,62,,Estonia,EST,,,2
+EG,63,,Egypt,EGY,,,2
+ER,64,,Eritrea,ERI,,,2
+ES,65,,Spain,ESP,,,2
+ET,66,,Ethiopia,ETH,,,2
+FI,67,,Finland,FIN,,,2
+FJ,68,,Fiji,FJI,,,2
+FK,69,,Falkland Islands (Malvinas),FLK,,,2
+FM,70,,Micronesia,FSM,,,2
+FO,71,,Faroe Islands,FRO,,,2
+FR,72,,France,FRA,,,2
+GA,73,,Gabon,GAB,,,2
+GB,74,,United Kingdom,GBR,,,2
+GD,75,,Grenada,GRD,,,2
+GE,76,,Georgia,GEO,,,2
+GF,77,,French Guiana,GUF,,,2
+GH,78,,Ghana,GHA,,,2
+GI,79,,Gibraltar,GIB,,,2
+GL,80,,Greenland,GRL,,,2
+GM,81,,Gambia,GMB,,,2
+GN,82,,Guinea,GIN,,,2
+GP,83,,Guadeloupe,GLP,,,2
+GQ,84,,Equatorial Guinea,GNQ,,,2
+GR,85,,Greece,GRC,,,2
+GT,86,,Guatemala,GTM,,,2
+GU,87,,Guam,GUM,,,2
+GW,88,,Guinea-Bissau,GNB,,,2
+GY,89,,Guyana,GUY,,,2
+HK,90,,Hong Kong,HKG,,,2
+HN,91,,Honduras,HND,,,2
+HR,92,,Croatia,HRV,,,2
+HT,93,,Haiti,HTI,,,2
+HU,94,,Hungary,HUN,,,2
+ID,95,,Indonesia,IDN,,,2
+IE,96,,Ireland,IRL,,,2
+IL,97,,Israel,ISR,,,2
+IN,98,,India,IND,,,2
+IQ,99,,Iraq,IRQ,,,2
+IR,100,,Iran,IRN,,,2
+IS,101,,Iceland,ISL,,,2
+IT,102,,Italy,ITA,,,2
+JM,103,,Jamaica,JAM,,,2
+JO,104,,Jordan,JOR,,,2
+JP,105,,Japan,JPN,,,2
+KE,106,,Kenya,KEN,,,2
+KG,107,,Kyrgyzstan,KGZ,,,2
+KH,108,,Cambodia,KHM,,,2
+KI,109,,Kiribati,KIR,,,2
+KM,110,,Comoros,COM,,,2
+KN,111,,Saint Kitts and Nevis,KNA,,,2
+KP,112,,North Korea,PRK,,,2
+KR,113,,South Korea,KOR,,,2
+KW,114,,Kuwait,KWT,,,2
+KY,115,,Cayman Islands,CYM,,,2
+KZ,116,,Kazakhstan,KAZ,,,2
+LA,117,,Laos,LAO,,,2
+LB,118,,Lebanon,LBN,,,2
+LC,119,,Saint Lucia,LCA,,,2
+LI,120,,Liechtenstein,LIE,,,2
+LK,121,,Sri Lanka,LKA,,,2
+LR,122,,Liberia,LBR,,,2
+LS,123,,Lesotho,LSO,,,2
+LT,124,,Lithuania,LTU,,,2
+LU,125,,Luxembourg,LUX,,,2
+LV,126,,Latvia,LVA,,,2
+LY,127,,Libya,LBY,,,2
+MA,128,,Morocco,MAR,,,2
+MC,129,,Monaco,MCO,,,2
+MD,130,,Moldova,MDA,,,2
+ME,131,,Montenegro,MNE,,,2
+MF,132,,Saint Martin,MAF,,,2
+MG,133,,Madagascar,MDG,,,2
+MH,134,,Marshall Islands,MHL,,,2
+MK,135,,Macedonia,MKD,,,2
+ML,136,,Mali,MLI,,,2
+MM,137,,Myanmar,MMR,,,2
+MN,138,,Mongolia,MNG,,,2
+MO,139,,Macao,MAC,,,2
+MP,140,,Northern Mariana Islands,MNP,,,2
+MQ,141,,Martinique,MTQ,,,2
+MR,142,,Mauritania,MRT,,,2
+MS,143,,Montserrat,MSR,,,2
+MT,144,,Malta,MLT,,,2
+MU,145,,Mauritius,MUS,,,2
+MV,146,,Maldives,MDV,,,2
+MW,147,,Malawi,MWI,,,2
+MX,148,,Mexico,MEX,,,2
+MY,149,,Malaysia,MYS,,,2
+MZ,150,,Mozambique,MOZ,,,2
+NA,151,,Namibia,NAM,,,2
+NC,152,,New Caledonia,NCL,,,2
+NE,153,,Niger,NER,,,2
+NF,154,,Norfolk Island,NFK,,,2
+NG,155,,Nigeria,NGA,,,2
+NI,156,,Nicaragua,NIC,,,2
+NL,157,,Netherlands,NLD,,,2
+NO,158,,Norway,NOR,,,2
+NP,159,,Nepal,NPL,,,2
+NR,160,,Nauru,NRU,,,2
+NU,161,,Niue,NIU,,,2
+NZ,162,,New Zealand,NZL,,,2
+OM,163,,Oman,OMN,,,2
+PA,164,,Panama,PAN,,,2
+PE,165,,Peru,PER,,,2
+PF,166,,French Polynesia,PYF,,,2
+PG,167,,Papua New Guinea,PNG,,,2
+PH,168,,Philippines,PHL,,,2
+PK,169,,Pakistan,PAK,,,2
+PL,170,,Poland,POL,,,2
+PM,171,,Saint Pierre and Miquelon,SPM,,,2
+PR,172,,Puerto Rico,PRI,,,2
+PS,173,,Palestine,PSE,,,2
+PT,174,,Portugal,PRT,,,2
+PW,175,,Palau,PLW,,,2
+PY,176,,Paraguay,PRY,,,2
+QA,177,,Qatar,QAT,,,2
+RE,178,,Reunion Island,REU,,,2
+RO,179,,Romania,ROU,,,2
+RS,180,,Serbia,SRB,,,2
+RU,181,,Russia,RUS,,,2
+RW,182,,Rwanda,RWA,,,2
+SA,183,,Saudi Arabia,SAU,,,2
+SB,184,,Solomon Islands,SLB,,,2
+SC,185,,Seychelles,SYC,,,2
+SD,186,,Sudan,SDN,,,2
+SE,187,,Sweden,SWE,,,2
+SG,188,,Singapore,SGP,,,2
+SH,189,,Saint Helena,SHN,,,2
+SI,190,,Slovenia,SVN,,,2
+SK,191,,Slovakia,SVK,,,2
+SL,192,,Sierra Leone,SLE,,,2
+SM,193,,San Marino,SMR,,,2
+SN,194,,Senegal,SEN,,,2
+SO,195,,Somalia,SOM,,,2
+SR,196,,Suriname,SUR,,,2
+SS,197,,South Sudan,SSD,,,2
+ST,198,,Sao Tome and Principe,STP,,,2
+SV,199,,El Salvador,SLV,,,2
+SX,200,,Sint Maarten,SXM,,,2
+SY,201,,Syria,SYR,,,2
+SZ,202,,Eswatini,SWZ,,,2
+TC,203,,Turks and Caicos Islands,TCA,,,2
+TD,204,,Chad,TCD,,,2
+TG,205,,Togo,TGO,,,2
+TH,206,,Thailand,THA,,,2
+TJ,207,,Tajikistan,TJK,,,2
+TL,208,,East Timor,TLS,,,2
+TM,209,,Turkmenistan,TKM,,,2
+TN,210,,Tunisia,TUN,,,2
+TO,211,,Tonga,TON,,,2
+TR,212,,Turkiye,TUR,,,2
+TT,213,,Trinidad and Tobago,TTO,,,2
+TV,214,,Tuvalu,TUV,,,2
+TW,215,,Taiwan,TWN,,,2
+TZ,216,,Tanzania,TZA,,,2
+UA,217,,Ukraine,UKR,,,2
+UG,218,,Uganda,UGA,,,2
+US,219,,U.S.A.,USA,,,2
+UY,220,,Uruguay,URY,,,2
+UZ,221,,Uzbekistan,UZB,,,2
+VC,222,,Saint Vincent and the Grenadines,VCT,,,2
+VE,223,,Venezuela,VEN,,,2
+VG,224,,British Virgin Islands,VGB,,,2
+VI,225,,US Virgin Islands,VIR,,,2
+VN,226,,Vietnam,VNM,,,2
+VU,227,,Vanuatu,VUT,,,2
+WF,228,,Wallis and Futuna Islands,WLF,,,2
+WS,229,,Samoa,WSM,,,2
+YE,230,,Yemen,YEM,,,2
+YT,231,,Mayotte,MYT,,,2
+ZA,232,,South Africa,ZAF,,,2
+ZM,233,,Zambia,ZMB,,,2
+ZW,234,,Zimbabwe,ZWE,,,2
+00,235,,Unkown,000,,,2
+BV,236,,Bouvet Island,BVT,,,2
+IO,237,,British Indian Ocean Territory (the),IOT,,,2
+TF,238,,French Southern Territories (the),ATF,,,2
+GG,239,,Guernsey,GGY,,,2
+HM,240,,Heard Island and McDonald Islands,HMD,,,2
+VA,241,,Holy See (the),VAT,,,2
+IM,242,,Isle of Man,IMN,,,2
+JE,243,,Jersey,JEY,,,2
+PN,244,,Pitcairn,PCN,,,2
+GS,245,,South Georgia and the South Sandwich Islands,SGS,,,2
+SJ,246,,Svalbard and Jan Mayen,SJM,,,2
+TK,247,,Tokelau,TKL,,,2
+UM,248,,United States Minor Outlying Islands (the),UMI,,,2
+EH,249,,Western Sahara*,ESH,,,2
+AX,250,,Ŭand Islands,ALA,,,2
+AD,1,,Andorra,AND,,,1
+AE,2,,Emiratos Árabes Unidos,ARE,,,1
+AF,3,,Afganistán,AFG,,,1
+AG,4,,Antigua y Barbuda,ATG,,,1
+AI,5,,Anguila,AIA,,,1
+AL,6,,Albania,ALB,,,1
+AM,7,,Armenia,ARM,,,1
+AO,8,,Angola,AGO,,,1
+AQ,9,,Antártida,ATA,,,1
+AR,10,,Argentina,ARG,,,1
+AS,11,,Samoa Americana,ASM,,,1
+AT,12,,Austria,AUT,,,1
+AU,13,,Australia,AUS,,,1
+AW,14,,Aruba,ABW,,,1
+AZ,15,,Azerbaiyán,AZE,,,1
+BA,16,,Bosnia y Herzegovina,BIH,,,1
+BB,17,,Barbados,BRB,,,1
+BD,18,,Bangladesh,BGD,,,1
+BE,19,,Bélgica,BEL,,,1
+BF,20,,Burkina Faso,BFA,,,1
+BG,21,,Bulgaria,BGR,,,1
+BH,22,,Bahréin,BHR,,,1
+BI,23,,Burundi,BDI,,,1
+BJ,24,,Benín,BEN,,,1
+BL,25,,San Bartolomé,BLM,,,1
+BM,26,,islas Bermudas,BMU,,,1
+BN,27,,Brunéi,BRN,,,1
+BO,28,,bolivia,BOL,,,1
+BQ,29,,Sabá,BES,,,1
+BR,30,,Brasil,BRA,,,1
+BS,31,,bahamas,BHS,,,1
+BT,32,,Bután,BTN,,,1
+BW,33,,Botsuana,BWA,,,1
+BY,34,,Bielorrusia,BLR,,,1
+BZ,35,,Belice,BLZ,,,1
+CA,36,,Canadá,CAN,,,1
+CC,37,,Islas Cocos (Keeling),CCK,,,1
+CD,38,,Congo,COD,,,1
+CF,39,,República Centroafricana,CAF,,,1
+CG,40,,Congo,COG,,,1
+CH,41,,Suiza,CHE,,,1
+CI,42,,Costa de Marfil,CIV,,,1
+CK,43,,Islas Cook,COK,,,1
+CL,44,,Chile,CHL,,,1
+CM,45,,Camerún,CMR,,,1
+CN,46,,Porcelana,CHN,,,1
+CO,47,,Colombia,COL,,,1
+CR,48,,Costa Rica,CRI,,,1
+CU,49,,Cuba,CUB,,,1
+CV,50,,Cabo Verde,CPV,,,1
+CW,51,,Curazao,CUW,,,1
+CX,52,,Isla de Navidad,CXR,,,1
+CY,53,,Chipre,CYP,,,1
+CZ,54,,República Checa,CZE,,,1
+DE,55,,Alemania,DEU,,,1
+DJ,56,,Yibuti,DJI,,,1
+DK,57,,Dinamarca,DNK,,,1
+DM,58,,república dominicana,DMA,,,1
+DO,59,,República Dominicana,DOM,,,1
+DZ,60,,Argelia,DZA,,,1
+EC,61,,Ecuador,ECU,,,1
+EE,62,,Estonia,EST,,,1
+EG,63,,Egipto,EGY,,,1
+ER,64,,Eritrea,ERI,,,1
+ES,65,,España,ESP,,,1
+ET,66,,Etiopía,ETH,,,1
+FI,67,,Finlandia,FIN,,,1
+FJ,68,,Fiyi,FJI,,,1
+FK,69,,Islas Malvinas (Falkland),FLK,,,1
+FM,70,,Micronesia,FSM,,,1
+FO,71,,Islas Faroe,FRO,,,1
+FR,72,,Francia,FRA,,,1
+GA,73,,Gabón,GAB,,,1
+GB,74,,Reino Unido,GBR,,,1
+GD,75,,Granada,GRD,,,1
+GE,76,,Georgia,GEO,,,1
+GF,77,,Guayana Francesa,GUF,,,1
+GH,78,,Ghana,GHA,,,1
+GI,79,,Gibraltar,GIB,,,1
+GL,80,,Groenlandia,GRL,,,1
+GM,81,,Gambia,GMB,,,1
+GN,82,,Guinea,GIN,,,1
+GP,83,,Guadalupe,GLP,,,1
+GQ,84,,Guinea Ecuatorial,GNQ,,,1
+GR,85,,Grecia,GRC,,,1
+GT,86,,Guatemala,GTM,,,1
+GU,87,,Guam,GUM,,,1
+GW,88,,Guinea-Bisáu,GNB,,,1
+GY,89,,Guayana,GUY,,,1
+HK,90,,Hong Kong,HKG,,,1
+HN,91,,Honduras,HND,,,1
+HR,92,,Croacia,HRV,,,1
+HT,93,,Haití,HTI,,,1
+HU,94,,Hungría,HUN,,,1
+ID,95,,Indonesia,IDN,,,1
+IE,96,,Irlanda,IRL,,,1
+IL,97,,Israel,ISR,,,1
+IN,98,,India,IND,,,1
+IQ,99,,Irak,IRQ,,,1
+IR,100,,Irán,IRN,,,1
+IS,101,,Islandia,ISL,,,1
+IT,102,,Italia,ITA,,,1
+JM,103,,Jamaica,JAM,,,1
+JO,104,,Jordán,JOR,,,1
+JP,105,,Japón,JPN,,,1
+KE,106,,Kenia,KEN,,,1
+KG,107,,Kirguistán,KGZ,,,1
+KH,108,,Camboya,KHM,,,1
+KI,109,,Kiribati,KIR,,,1
+KM,110,,Comoras,COM,,,1
+KN,111,,San Cristóbal y Nieves,KNA,,,1
+KP,112,,Corea del Norte,PRK,,,1
+KR,113,,Corea del Sur,KOR,,,1
+KW,114,,Kuwait,KWT,,,1
+KY,115,,Islas Caimán,CYM,,,1
+KZ,116,,Kazajstán,KAZ,,,1
+LA,117,,Laos,LAO,,,1
+LB,118,,Líbano,LBN,,,1
+LC,119,,Santa Lucía,LCA,,,1
+LI,120,,Liechtenstein,LIE,,,1
+LK,121,,Sri Lanka,LKA,,,1
+LR,122,,Liberia,LBR,,,1
+LS,123,,Lesoto,LSO,,,1
+LT,124,,Lituania,LTU,,,1
+LU,125,,Luxemburgo,LUX,,,1
+LV,126,,Letonia,LVA,,,1
+LY,127,,Libia,LBY,,,1
+MA,128,,Marruecos,MAR,,,1
+MC,129,,Mónaco,MCO,,,1
+MD,130,,Moldavia,MDA,,,1
+ME,131,,Montenegro,MNE,,,1
+MF,132,,San Martín,MAF,,,1
+MG,133,,Madagascar,MDG,,,1
+MH,134,,Islas Marshall,MHL,,,1
+MK,135,,macedonia,MKD,,,1
+ML,136,,Malí,MLI,,,1
+MM,137,,Birmania,MMR,,,1
+MN,138,,Mongolia,MNG,,,1
+MO,139,,macao,MAC,,,1
+MP,140,,Islas Marianas del Norte,MNP,,,1
+MQ,141,,Martinica,MTQ,,,1
+MR,142,,Mauritania,MRT,,,1
+MS,143,,Montserrat,MSR,,,1
+MT,144,,Malta,MLT,,,1
+MU,145,,Mauricio,MUS,,,1
+MV,146,,Maldivas,MDV,,,1
+MW,147,,Malaui,MWI,,,1
+MX,148,,México,MEX,,,1
+MY,149,,Malasia,MYS,,,1
+MZ,150,,Mozambique,MOZ,,,1
+NA,151,,Namibia,NAM,,,1
+NC,152,,Nueva Caledonia,NCL,,,1
+NE,153,,Níger,NER,,,1
+NF,154,,Isla Norfolk,NFK,,,1
+NG,155,,Nigeria,NGA,,,1
+NI,156,,Nicaragua,NIC,,,1
+NL,157,,Países Bajos,NLD,,,1
+NO,158,,Noruega,NOR,,,1
+NP,159,,Nepal,NPL,,,1
+NR,160,,Nauru,NRU,,,1
+NU,161,,Niue,NIU,,,1
+NZ,162,,Nueva Zelanda,NZL,,,1
+OM,163,,Omán,OMN,,,1
+PA,164,,Panamá,PAN,,,1
+PE,165,,Perú,PER,,,1
+PF,166,,Polinesia francés,PYF,,,1
+PG,167,,Papúa Nueva Guinea,PNG,,,1
+PH,168,,Filipinas,PHL,,,1
+PK,169,,Pakistán,PAK,,,1
+PL,170,,Polonia,POL,,,1
+PM,171,,San Pedro y Miquelón,SPM,,,1
+PR,172,,Puerto Rico,PRI,,,1
+PS,173,,Palestina,PSE,,,1
+PT,174,,Portugal,PRT,,,1
+PW,175,,Palaos,PLW,,,1
+PY,176,,Paraguay,PRY,,,1
+QA,177,,Katar,QAT,,,1
+RE,178,,Isla reunión,REU,,,1
+RO,179,,Rumania,ROU,,,1
+RS,180,,Serbia,SRB,,,1
+RU,181,,Rusia,RUS,,,1
+RW,182,,Ruanda,RWA,,,1
+SA,183,,Arabia Saudita,SAU,,,1
+SB,184,,Islas Salomón,SLB,,,1
+SC,185,,Seychelles,SYC,,,1
+SD,186,,Sudán,SDN,,,1
+SE,187,,Suecia,SWE,,,1
+SG,188,,Singapur,SGP,,,1
+SH,189,,santa elena,SHN,,,1
+SI,190,,Eslovenia,SVN,,,1
+SK,191,,Eslovaquia,SVK,,,1
+SL,192,,Sierra Leona,SLE,,,1
+SM,193,,San Marino,SMR,,,1
+SN,194,,Senegal,SEN,,,1
+SO,195,,Somalia,SOM,,,1
+SR,196,,Surinam,SUR,,,1
+SS,197,,Sudán del Sur,SSD,,,1
+ST,198,,Santo Tomé y Príncipe,STP,,,1
+SV,199,,El Salvador,SLV,,,1
+SX,200,,San Martín,SXM,,,1
+SY,201,,Siria,SYR,,,1
+SZ,202,,Esuatini,SWZ,,,1
+TC,203,,Islas Turcas y Caicos,TCA,,,1
+TD,204,,Chad,TCD,,,1
+TG,205,,Ir,TGO,,,1
+TH,206,,Tailandia,THA,,,1
+TJ,207,,Tayikistán,TJK,,,1
+TL,208,,Timor Oriental,TLS,,,1
+TM,209,,Turkmenistán,TKM,,,1
+TN,210,,Túnez,TUN,,,1
+TO,211,,Tonga,TON,,,1
+TR,212,,Turquía,TUR,,,1
+TT,213,,Trinidad y Tobago,TTO,,,1
+TV,214,,Tuvalu,TUV,,,1
+TW,215,,Taiwán,TWN,,,1
+TZ,216,,Tanzania,TZA,,,1
+UA,217,,Ucrania,UKR,,,1
+UG,218,,Uganda,UGA,,,1
+US,219,,EE.UU,USA,,,1
+UY,220,,Uruguay,URY,,,1
+UZ,221,,Uzbekistán,UZB,,,1
+VC,222,,San Vicente y las Granadinas,VCT,,,1
+VE,223,,Venezuela,VEN,,,1
+VG,224,,Islas Vírgenes Británicas,VGB,,,1
+VI,225,,Islas Vírgenes de EE.UU,VIR,,,1
+VN,226,,Vietnam,VNM,,,1
+VU,227,,Vanuatu,VUT,,,1
+WF,228,,Islas Wallis y Futuna,WLF,,,1
+WS,229,,Samoa,WSM,,,1
+YE,230,,Yemen,YEM,,,1
+YT,231,,Mayotte,MYT,,,1
+ZA,232,,Sudáfrica,ZAF,,,1
+ZM,233,,Zambia,ZMB,,,1
+ZW,234,,Zimbabue,ZWE,,,1
+00,235,,Desconocido,000,,,1
+BV,236,,Isla Bouvet,BVT,,,1
+IO,237,,Territorio Británico del Océano Índico (el),IOT,,,1
+TF,238,,Territorios Australes Franceses (los),ATF,,,1
+GG,239,,Guernesey,GGY,,,1
+HM,240,,Islas Heard y McDonald,HMD,,,1
+VA,241,,Santa Sede (la),VAT,,,1
+IM,242,,Isla del hombre,IMN,,,1
+JE,243,,Jersey,JEY,,,1
+PN,244,,Pitcairn,PCN,,,1
+GS,245,,Georgia del sur y las islas Sandwich del sur,SGS,,,1
+SJ,246,,Svalbard y Jan Mayen,SJM,,,1
+TK,247,,Tokelau,TKL,,,1
+UM,248,,Islas menores alejadas de los Estados Unidos (las),UMI,,,1
+EH,249,,Sahara Occidental*,ESH,,,1
+AX,250,,Islas Ŭe,ALA,,,1
+AD,1,,Andorra,AND,,,3
+AE,2,,Emirats Àrabs Units,ARE,,,3
+AF,3,,Afganistan,AFG,,,3
+AG,4,,Antigua i Barbuda,ATG,,,3
+AI,5,,Anguilla,AIA,,,3
+AL,6,,Albània,ALB,,,3
+AM,7,,Armènia,ARM,,,3
+AO,8,,Angola,AGO,,,3
+AQ,9,,Antàrtida,ATA,,,3
+AR,10,,Argentina,ARG,,,3
+AS,11,,Samoa Americana,ASM,,,3
+AT,12,,Àustria,AUT,,,3
+AU,13,,Austràlia,AUS,,,3
+AW,14,,Aruba,ABW,,,3
+AZ,15,,Azerbaidjan,AZE,,,3
+BA,16,,Bòsnia i Hercegovina,BIH,,,3
+BB,17,,Barbados,BRB,,,3
+BD,18,,Bangla Desh,BGD,,,3
+BE,19,,Bèlgica,BEL,,,3
+BF,20,,Burkina Faso,BFA,,,3
+BG,21,,Bulgària,BGR,,,3
+BH,22,,Bahrain,BHR,,,3
+BI,23,,Burundi,BDI,,,3
+BJ,24,,Benín,BEN,,,3
+BL,25,,Sant Barthelemy,BLM,,,3
+BM,26,,Bermudes,BMU,,,3
+BN,27,,Brunei,BRN,,,3
+BO,28,,Bolívia,BOL,,,3
+BQ,29,,Saba,BES,,,3
+BR,30,,Brasil,BRA,,,3
+BS,31,,Bahames,BHS,,,3
+BT,32,,Butan,BTN,,,3
+BW,33,,Botswana,BWA,,,3
+BY,34,,Bielorússia,BLR,,,3
+BZ,35,,Belize,BLZ,,,3
+CA,36,,Canadà,CAN,,,3
+CC,37,,Illes Cocos (Keeling).,CCK,,,3
+CD,38,,Congo,COD,,,3
+CF,39,,República Centreafricana,CAF,,,3
+CG,40,,Congo,COG,,,3
+CH,41,,Suïssa,CHE,,,3
+CI,42,,Costa d'Ivori,CIV,,,3
+CK,43,,Illes Cook,COK,,,3
+CL,44,,Xile,CHL,,,3
+CM,45,,Camerun,CMR,,,3
+CN,46,,Xina,CHN,,,3
+CO,47,,Colòmbia,COL,,,3
+CR,48,,Costa Rica,CRI,,,3
+CU,49,,Cuba,CUB,,,3
+CV,50,,Cap Verd,CPV,,,3
+CW,51,,Curaçao,CUW,,,3
+CX,52,,Illa de Nadal,CXR,,,3
+CY,53,,Xipre,CYP,,,3
+CZ,54,,República Txeca,CZE,,,3
+DE,55,,Alemanya,DEU,,,3
+DJ,56,,Djibouti,DJI,,,3
+DK,57,,Dinamarca,DNK,,,3
+DM,58,,Dominica,DMA,,,3
+DO,59,,República Dominicana,DOM,,,3
+DZ,60,,Algèria,DZA,,,3
+EC,61,,Equador,ECU,,,3
+EE,62,,Estònia,EST,,,3
+EG,63,,Egipte,EGY,,,3
+ER,64,,Eritrea,ERI,,,3
+ES,65,,Espanya,ESP,,,3
+ET,66,,Etiòpia,ETH,,,3
+FI,67,,Finlàndia,FIN,,,3
+FJ,68,,Fiji,FJI,,,3
+FK,69,,Illes Falkland (Malvines),FLK,,,3
+FM,70,,Micronèsia,FSM,,,3
+FO,71,,Illes Faroe,FRO,,,3
+FR,72,,França,FRA,,,3
+GA,73,,Gabon,GAB,,,3
+GB,74,,Regne Unit,GBR,,,3
+GD,75,,Granada,GRD,,,3
+GE,76,,Geòrgia,GEO,,,3
+GF,77,,Guaiana Francesa,GUF,,,3
+GH,78,,Ghana,GHA,,,3
+GI,79,,Gibraltar,GIB,,,3
+GL,80,,Groenlàndia,GRL,,,3
+GM,81,,Gàmbia,GMB,,,3
+GN,82,,Guinea,GIN,,,3
+GP,83,,Guadalupe,GLP,,,3
+GQ,84,,Guinea Equatorial,GNQ,,,3
+GR,85,,Grècia,GRC,,,3
+GT,86,,Guatemala,GTM,,,3
+GU,87,,Guam,GUM,,,3
+GW,88,,Guinea Bissau,GNB,,,3
+GY,89,,Guyana,GUY,,,3
+HK,90,,Hong Kong,HKG,,,3
+HN,91,,Hondures,HND,,,3
+HR,92,,Croàcia,HRV,,,3
+HT,93,,Haití,HTI,,,3
+HU,94,,Hongria,HUN,,,3
+ID,95,,Indonèsia,IDN,,,3
+IE,96,,Irlanda,IRL,,,3
+IL,97,,Israel,ISR,,,3
+IN,98,,Índia,IND,,,3
+IQ,99,,Iraq,IRQ,,,3
+IR,100,,Iran,IRN,,,3
+IS,101,,Islàndia,ISL,,,3
+IT,102,,Itàlia,ITA,,,3
+JM,103,,Jamaica,JAM,,,3
+JO,104,,Jordània,JOR,,,3
+JP,105,,Japó,JPN,,,3
+KE,106,,Kenya,KEN,,,3
+KG,107,,Kirguizistan,KGZ,,,3
+KH,108,,Cambodja,KHM,,,3
+KI,109,,Kiribati,KIR,,,3
+KM,110,,Comores,COM,,,3
+KN,111,,Saint Kitts i Nevis,KNA,,,3
+KP,112,,Corea del Nord,PRK,,,3
+KR,113,,Corea del Sud,KOR,,,3
+KW,114,,Kuwait,KWT,,,3
+KY,115,,Illes Caiman,CYM,,,3
+KZ,116,,Kazakhstan,KAZ,,,3
+LA,117,,Laos,LAO,,,3
+LB,118,,Líban,LBN,,,3
+LC,119,,Santa Llúcia,LCA,,,3
+LI,120,,Liechtenstein,LIE,,,3
+LK,121,,Sri Lanka,LKA,,,3
+LR,122,,Libèria,LBR,,,3
+LS,123,,Lesotho,LSO,,,3
+LT,124,,Lituània,LTU,,,3
+LU,125,,Luxemburg,LUX,,,3
+LV,126,,Letònia,LVA,,,3
+LY,127,,Líbia,LBY,,,3
+MA,128,,el Marroc,MAR,,,3
+MC,129,,Mònaco,MCO,,,3
+MD,130,,Moldàvia,MDA,,,3
+ME,131,,Montenegro,MNE,,,3
+MF,132,,Sant Martí,MAF,,,3
+MG,133,,Madagascar,MDG,,,3
+MH,134,,Illes Marshall,MHL,,,3
+MK,135,,Macedònia,MKD,,,3
+ML,136,,Mali,MLI,,,3
+MM,137,,Myanmar,MMR,,,3
+MN,138,,Mongòlia,MNG,,,3
+MO,139,,Macau,MAC,,,3
+MP,140,,Illes Mariannes del Nord,MNP,,,3
+MQ,141,,Martinica,MTQ,,,3
+MR,142,,Mauritània,MRT,,,3
+MS,143,,Montserrat,MSR,,,3
+MT,144,,Malta,MLT,,,3
+MU,145,,Maurici,MUS,,,3
+MV,146,,Maldives,MDV,,,3
+MW,147,,Malawi,MWI,,,3
+MX,148,,Mèxic,MEX,,,3
+MY,149,,Malàisia,MYS,,,3
+MZ,150,,Moçambic,MOZ,,,3
+NA,151,,Namíbia,NAM,,,3
+NC,152,,Nova Caledònia,NCL,,,3
+NE,153,,Níger,NER,,,3
+NF,154,,Illa Norfolk,NFK,,,3
+NG,155,,Nigèria,NGA,,,3
+NI,156,,Nicaragua,NIC,,,3
+NL,157,,Països Baixos,NLD,,,3
+NO,158,,Noruega,NOR,,,3
+NP,159,,Nepal,NPL,,,3
+NR,160,,Nauru,NRU,,,3
+NU,161,,Niue,NIU,,,3
+NZ,162,,Nova Zelanda,NZL,,,3
+OM,163,,Oman,OMN,,,3
+PA,164,,Panamà,PAN,,,3
+PE,165,,Perú,PER,,,3
+PF,166,,Polinèsia Francesa,PYF,,,3
+PG,167,,Papua Nova Guinea,PNG,,,3
+PH,168,,Filipines,PHL,,,3
+PK,169,,Pakistan,PAK,,,3
+PL,170,,Polònia,POL,,,3
+PM,171,,Sant Pere i Miqueló,SPM,,,3
+PR,172,,Puerto Rico,PRI,,,3
+PS,173,,Palestina,PSE,,,3
+PT,174,,Portugal,PRT,,,3
+PW,175,,Palau,PLW,,,3
+PY,176,,Paraguai,PRY,,,3
+QA,177,,Qatar,QAT,,,3
+RE,178,,Illa de la Reunió,REU,,,3
+RO,179,,Romania,ROU,,,3
+RS,180,,Sèrbia,SRB,,,3
+RU,181,,Rússia,RUS,,,3
+RW,182,,Ruanda,RWA,,,3
+SA,183,,Aràbia Saudita,SAU,,,3
+SB,184,,Illes Salomó,SLB,,,3
+SC,185,,Seychelles,SYC,,,3
+SD,186,,Sudan,SDN,,,3
+SE,187,,Suècia,SWE,,,3
+SG,188,,Singapur,SGP,,,3
+SH,189,,Santa Helena,SHN,,,3
+SI,190,,Eslovènia,SVN,,,3
+SK,191,,Eslovàquia,SVK,,,3
+SL,192,,Sierra Leone,SLE,,,3
+SM,193,,San Marino,SMR,,,3
+SN,194,,Senegal,SEN,,,3
+SO,195,,Somàlia,SOM,,,3
+SR,196,,Surinam,SUR,,,3
+SS,197,,Sudan del Sud,SSD,,,3
+ST,198,,Santo Tomé i Príncipe,STP,,,3
+SV,199,,El Salvador,SLV,,,3
+SX,200,,Sint Maarten,SXM,,,3
+SY,201,,Síria,SYR,,,3
+SZ,202,,Eswatini,SWZ,,,3
+TC,203,,Illes Turks i Caicos,TCA,,,3
+TD,204,,Txad,TCD,,,3
+TG,205,,Anar,TGO,,,3
+TH,206,,Tailàndia,THA,,,3
+TJ,207,,Tadjikistan,TJK,,,3
+TL,208,,Timor Oriental,TLS,,,3
+TM,209,,Turkmenistan,TKM,,,3
+TN,210,,Tunísia,TUN,,,3
+TO,211,,Tonga,TON,,,3
+TR,212,,Turquia,TUR,,,3
+TT,213,,Trinitat i Tobago,TTO,,,3
+TV,214,,Tuvalu,TUV,,,3
+TW,215,,Taiwan,TWN,,,3
+TZ,216,,Tanzània,TZA,,,3
+UA,217,,Ucraïna,UKR,,,3
+UG,218,,Uganda,UGA,,,3
+US,219,,EUA,USA,,,3
+UY,220,,Uruguai,URY,,,3
+UZ,221,,Uzbekistan,UZB,,,3
+VC,222,,Sant Vicenç i les Granadines,VCT,,,3
+VE,223,,Veneçuela,VEN,,,3
+VG,224,,Illes Verges Britàniques,VGB,,,3
+VI,225,,Illes Verges dels EUA,VIR,,,3
+VN,226,,Vietnam,VNM,,,3
+VU,227,,Vanuatu,VUT,,,3
+WF,228,,Illes Wallis i Futuna,WLF,,,3
+WS,229,,Samoa,WSM,,,3
+YE,230,,Iemen,YEM,,,3
+YT,231,,Mayotte,MYT,,,3
+ZA,232,,Sud-Àfrica,ZAF,,,3
+ZM,233,,Zàmbia,ZMB,,,3
+ZW,234,,Zimbabwe,ZWE,,,3
+00,235,,Desconegut,000,,,3
+BV,236,,Illa Bouvet,BVT,,,3
+IO,237,,Territori Britànic de l'Oceà Índic (el),IOT,,,3
+TF,238,,Territoris del Sud francesos (els),ATF,,,3
+GG,239,,Guernsey,GGY,,,3
+HM,240,,Illa Heard i illes McDonald,HMD,,,3
+VA,241,,Santa Seu (la),VAT,,,3
+IM,242,,illa de l'home,IMN,,,3
+JE,243,,Jersey,JEY,,,3
+PN,244,,Pitcairn,PCN,,,3
+GS,245,,Geòrgia del Sud i les illes Sandwich del Sud,SGS,,,3
+SJ,246,,Svalbard i Jan Mayen,SJM,,,3
+TK,247,,Tokelau,TKL,,,3
+UM,248,,Illes menors perifèriques dels Estats Units (les),UMI,,,3
+EH,249,,Sàhara Occidental*,ESH,,,3
+AX,250,,Illes Ŭand,ALA,,,3
+
