@@ -1,0 +1,191 @@
+enviroment=$1
+file_fc_flx_2h_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_2H_HIST_PAP2.sql"
+file_fc_flx_age_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_AGE_HIST_PAP2.sql"
+file_fc_flx_by_city_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_BY_CITY_HIST_PAP2.sql"
+file_fc_flx_by_gender_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_BY_GENDER_HIST_PAP2.sql"
+file_fc_flx_los_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_LOS_HIST_PAP2.sql"
+file_fc_flx_los_2_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_LOS_PART2_HIST_PAP2.sql"
+file_fc_flx_los_3_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_LOS_PART3_HIST_PAP2.sql"
+file_fc_flx_nos_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_NOS_HIST_PAP2.sql"
+file_fc_flx_place_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_PLACE_HIST_PAP2.sql"
+file_fc_flx_place_2_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_PLACE_PART2_HIST_PAP2.sql"
+file_fc_flx_rec_hist="/home/ec2-user/SQL/files/${enviroment}/FLUX/LOAD_FC_FLX_REC_HIST_PAP2.sql"
+file_task_ax_flx_2h="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_2H_PAP2.sql"
+file_task_ax_flx_age="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_AGE_PAP2.sql"
+file_task_ax_flx_city="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_BY_CITY_PAP2.sql"
+file_task_ax_flx_gender="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_BY_GENDER_PAP2.sql"
+file_task_ax_flx_los="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_LOS_PAP2.sql"
+file_task_ax_flx_nos="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_NOS_PAP2.sql"
+file_task_ax_flx_placev1="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_PLACE_V1_PAP2.sql"
+file_task_ax_flx_placev2="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_PLACE_V2_PAP2.sql"
+file_task_ax_flx_rec="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_AX_FLX_REC_PAP2.sql"
+file_task_fc_flx_2h="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_2H_PAP2.sql"
+file_task_fc_flx_age="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_AGE_PAP2.sql"
+file_task_fc_flx_city="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_BY_CITY_PAP2.sql"
+file_task_fc_flx_gender="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_BY_GENDER_PAP2.sql"
+file_task_fc_flx_los="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_LOS_PAP2.sql"
+file_task_fc_flx_nos="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_NOS_PAP2.sql"
+file_task_fc_flx_placev1="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_PLACE_V1_PAP2.sql"
+file_task_fc_flx_placev2="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_PLACE_V2_PAP2.sql"
+file_task_fc_flx_rec="/home/ec2-user/SQL/files/${enviroment}/FLUX/TASK_LOAD_FC_FLX_REC_PAP2.sql"
+
+
+
+
+if [[ $enviroment == "dev" ]] ; then
+    BBDD="ETL_DEV"
+    connectST="dest"
+    connectSIT="desit"
+    connectPR="deprocess"
+elif [[ $enviroment == "pre" ]] ; then
+    BBDD="ETL_PRE"
+    connectST="prest"
+    connectSIT="presit"
+    connectPR="preprocess"
+elif [[ $enviroment == "pro" ]] ; then
+    BBDD="ETL_PRO"
+    connectST="prost"
+    connectSIT="prosit"
+    connectPR="proprocess"
+fi
+
+log_file="/home/ec2-user/SQL/logs/snowsql_log.log"
+
+#echo "Executing file -> $file_fc_flx_2h_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_2h_hist} -o log_file=${log_file}
+~/bin/snowsql -a osp-b2b -u ETL_PRE --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c preprocess -f /home/ec2-user/SQL/files/dev/FLUX/LOAD_FC_FLX_2H_HIST_PAP2.sql -o log_file=/home/ec2-user/SQL/logs/snowsql_log.log
+
+#echo "Executing file -> $file_fc_flx_age_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_age_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_by_city_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_by_city_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_by_gender_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_by_gender_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_los_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_los_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_los_2_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_fc_flx_los_2_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_los_3_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_los_3_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_nos_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_nos_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_place_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_place_hist} -o log_file=${log_file}
+
+
+#echo "Executing file -> $file_fc_flx_place_2_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_place_2_hist} -o log_file=${log_file}
+
+
+#echo "Executing file -> $file_fc_flx_nos_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_nos_hist} -o log_file=${log_file}
+
+#echo "Executing file -> $file_fc_flx_rec_hist"
+#echo
+#~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectSIT} -f ${file_fc_flx_rec_hist} -o log_file=${log_file}
+
+echo "Executing file -> $file_task_ax_flx_2h"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_2h} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_age"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_age} -o log_file=${log_file}
+~/bin/snowsql -a osp-b2b -u ETL_PRE --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c preprocess -f /home/ec2-user/SQL/files/dev/FLUX/TASK_LOAD_AX_FLX_AGE_PAP2.sql -o log_file=/home/ec2-user/SQL/logs/snowsql_log.log
+
+
+echo "Executing file -> $file_task_ax_flx_city"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_city} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_gender"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_gender} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_los"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_los} -o log_file=${log_file}
+
+echo "Executing file -> $file_task_ax_flx_nos"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_nos} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_placev1"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_placev1} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_placev2"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_placev2} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_ax_flx_rec"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_ax_flx_rec} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_2h"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_2h} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_age"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_age} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_city"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_city} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_gender"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_gender} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_los"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_los} -o log_file=${log_file}
+
+echo "Executing file -> $file_task_fc_flx_nos"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_nos} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_placev1"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_placev1} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_placev2"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_placev2} -o log_file=${log_file}
+
+
+echo "Executing file -> $file_task_fc_flx_rec"
+echo
+~/bin/snowsql -a osp-b2b -u ${BBDD} --private-key-path /home/ec2-user/RSA_KEY/rsa_key.p8 -c ${connectPR} -f ${file_task_fc_flx_rec} -o log_file=${log_file}
