@@ -249,8 +249,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MUNICIPIO) M
+                  from STAGING.ST_FLX_DIARIO_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -267,8 +267,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_LLEGADA_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LLEGADA_MUNICIPIO) M
+                  from STAGING.ST_FLX_LLEGADA_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_LLEGADA_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -285,8 +285,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_SALIDA_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_SALIDA_MUNICIPIO) M
+                  from STAGING.ST_FLX_SALIDA_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_SALIDA_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -303,8 +303,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MUNICIPIO) M
+                  from STAGING.ST_FLX_NOCTURNO_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -321,8 +321,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MUNICIPIO) M
+                  from STAGING.ST_FLX_DIARIO_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -339,8 +339,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_LLEGADA_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LLEGADA_MUNICIPIO) M
+                  from STAGING.ST_FLX_LLEGADA_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_LLEGADA_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -357,8 +357,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_SALIDA_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_SALIDA_MUNICIPIO) M
+                  from STAGING.ST_FLX_SALIDA_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_SALIDA_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -375,8 +375,8 @@ EXECUTE IMMEDIATE '
                       Volumen,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE    
-                  from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MUNICIPIO a
-                  ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MUNICIPIO) M
+                  from STAGING.ST_FLX_NOCTURNO_MUNICIPIO a
+                  ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MUNICIPIO) M
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -485,7 +485,7 @@ EXECUTE IMMEDIATE '
             ,SIT.DM_FLX_ZONE z
             ,SIT.DM_GLB_VISITOR_CATEGORY C
             ,SIT.DM_FLX_VISITOR_ORIGIN O
-            ,DEV_TOURISM_DB.SIT.DM_GLB_CITY CITY
+            ,SIT.DM_GLB_CITY CITY
             ,SIT.DM_FLX_ZIPCODE_NORM tra
             ,SIT.DM_IVE_KPI_MASTER KPI
             
@@ -544,7 +544,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -562,7 +562,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -580,7 +580,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MES_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -598,7 +598,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -805,7 +805,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_DIARIO_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_DIARIO_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -823,7 +823,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_LLEGADA_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LLEGADA_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_LLEGADA_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -841,7 +841,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_SALIDA_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_SALIDA_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_SALIDA_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -859,7 +859,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -877,7 +877,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_DIARIO_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_DIARIO_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -895,7 +895,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_LLEGADA_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LLEGADA_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_LLEGADA_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -913,7 +913,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_SALIDA_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_SALIDA_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_SALIDA_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -931,7 +931,7 @@ EXECUTE IMMEDIATE '
                 trim(continuo) continuo,
                 trim(A.LOAD_DATE) LOAD_DATE
             from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD a
-            ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD) M
+            ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_NACIONALIDAD) M
           where a.load_date=m.load_date  
             AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
             AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''

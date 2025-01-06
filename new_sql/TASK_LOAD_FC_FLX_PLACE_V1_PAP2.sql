@@ -9,8 +9,7 @@ EXECUTE IMMEDIATE '
                 INSERT INTO SIT.FC_FLX_PLACE_BY_CITY_WEEK
                 (
                 select
-                    A.YEAR_KEY,
-                    A.WEEK_KEY,
+                    A.WEEK_YEAR_KEY,
                     a.zone_key,
                     a.visitor_origin_key,
                     a.visitor_category_key,
@@ -43,8 +42,7 @@ EXECUTE IMMEDIATE '
                     INSERT INTO SIT.FC_FLX_PLACE_BY_COUNTRY_WEEK
                     (
                     select
-                        YEAR_KEY,
-                        WEEK_KEY,
+                        WEEK_YEAR_KEY,
                         a.zone_key,
                         a.visitor_origin_key,
                         a.visitor_category_key,

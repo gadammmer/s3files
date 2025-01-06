@@ -32,8 +32,7 @@ EXECUTE IMMEDIATE '
                     INSERT INTO SIT.FC_FLX_PLACE_WEEK 
                     (
                     select 
-                        A.YEAR_KEY,
-                        A.WEEK_KEY,
+                        A.WEEK_YEAR_KEY,
                         a.zone_key,
                         a.visitor_origin_key,
                         a.visitor_category_key,

@@ -552,7 +552,7 @@ COMPROBACION_FINAL := (SELECT COUNT(1) FROM (
     INSERT INTO SIT.FC_FLX_PLACE_BY_COUNTRY_WEEK 
     (
     select 
-        WEEK_YEAR_KEY,
+        a.WEEK_YEAR_KEY,
         a.zone_key,
         a.visitor_origin_key,
         a.visitor_category_key,

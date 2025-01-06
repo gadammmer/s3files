@@ -30,8 +30,8 @@ WITH CONSOLIDADO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -51,8 +51,8 @@ WITH CONSOLIDADO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -72,8 +72,8 @@ WITH CONSOLIDADO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA) M
+    from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -93,8 +93,8 @@ WITH CONSOLIDADO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA) M
+    from STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -114,8 +114,8 @@ CONTINUO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_SEMANA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -135,8 +135,8 @@ CONTINUO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_SEMANA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -156,8 +156,8 @@ CONTINUO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA) M
+    from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_SEMANA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -177,8 +177,8 @@ CONTINUO AS (
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE,
         trim(FILE_NAME) FILE_NAME
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA) M
+    from STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_VISPERA_SEMANA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -324,7 +324,7 @@ ELSE
             TRANSLATE(upper(city_des),'ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔŔŃČŇĎ.;:-_/¿?¡!+*#& ,’()', 'AEIOUAEIOUAEIOUOAÑEOI') city_DES_JOIN,
             city_des,
             city_id 
-        from DEV_TOURISM_DB.SIT.DM_GLB_CITY
+        from SIT.DM_GLB_CITY
         )
         select
             a.place_city_des RAW_city_DES,
@@ -512,8 +512,8 @@ WITH CONSOLIDADO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -532,8 +532,8 @@ WITH CONSOLIDADO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -552,8 +552,8 @@ WITH CONSOLIDADO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA) M
+    from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -572,8 +572,8 @@ WITH CONSOLIDADO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA) M
+    from STAGING.ST_FLX_LUGARNOCHE_VISPERA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_VISPERA) M
     where
     a.load_date=m.load_date
     AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
@@ -592,8 +592,8 @@ CONTINUO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -612,8 +612,8 @@ CONTINUO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA) M
+    from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -632,8 +632,8 @@ CONTINUO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_DIAVISITA) M
+    from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -652,8 +652,8 @@ CONTINUO AS (
         Volumen,        
         trim(continuo) continuo,
         trim(A.LOAD_DATE) LOAD_DATE
-    from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA a
-    ,(select DISTINCT LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_LUGARNOCHE_VISPERA) M
+    from STAGING.ST_FLX_LUGARNOCHE_VISPERA a
+    ,(select DISTINCT LOAD_DATE from STAGING.ST_FLX_LUGARNOCHE_VISPERA) M
     where
     a.load_date=m.load_date  
     AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
@@ -786,7 +786,7 @@ ELSE
             TRANSLATE(upper(city_des),'ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔŔŃČŇĎ.;:-_/¿?¡!+*#& ,’()', 'AEIOUAEIOUAEIOUOAÑEOI') city_DES_JOIN,
             city_des,
             city_id 
-        from DEV_TOURISM_DB.SIT.DM_GLB_CITY
+        from SIT.DM_GLB_CITY
         )
         select
             a.place_city_des RAW_city_DES,

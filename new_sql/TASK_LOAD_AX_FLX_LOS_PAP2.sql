@@ -395,8 +395,8 @@ EXECUTE IMMEDIATE '
                   Volumen ,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE
-              from DEV_TOURISM_DB.STAGING.ST_FLX_DURACIONESTANCIA a,
-              (select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DURACIONESTANCIA) M	
+              from STAGING.ST_FLX_DURACIONESTANCIA a,
+              (select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DURACIONESTANCIA) M	
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -412,8 +412,8 @@ EXECUTE IMMEDIATE '
                   Volumen ,
                       trim(continuo) continuo,
                       trim(A.LOAD_DATE) LOAD_DATE
-              from DEV_TOURISM_DB.STAGING.ST_FLX_DURACIONESTANCIA a,
-              (select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DURACIONESTANCIA) M	
+              from STAGING.ST_FLX_DURACIONESTANCIA a,
+              (select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DURACIONESTANCIA) M	
                 where a.load_date=m.load_date  
                   AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                   AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -561,8 +561,8 @@ EXECUTE IMMEDIATE '
                           Volumen,
                           trim(continuo) continuo,
                           trim(A.LOAD_DATE) LOAD_DATE   
-                      from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MES a
-                      ,(select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MES) M
+                      from STAGING.ST_FLX_DIARIO_MES a
+                      ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MES) M
                     where a.load_date=m.load_date  
                       AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                       AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -578,8 +578,8 @@ EXECUTE IMMEDIATE '
                           Volumen,
                           trim(continuo) continuo,
                           trim(A.LOAD_DATE) LOAD_DATE   
-                      from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MES a
-                      ,(select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MES) M
+                      from STAGING.ST_FLX_NOCTURNO_MES a
+                      ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES) M
                     where a.load_date=m.load_date  
                       AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
                       AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
@@ -595,8 +595,8 @@ EXECUTE IMMEDIATE '
                           Volumen,
                           trim(continuo) continuo,
                           trim(A.LOAD_DATE) LOAD_DATE   
-                      from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MES a
-                      ,(select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_DIARIO_MES) M
+                      from STAGING.ST_FLX_DIARIO_MES a
+                      ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_DIARIO_MES) M
                     where a.load_date=m.load_date  
                       AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                       AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
@@ -611,8 +611,8 @@ EXECUTE IMMEDIATE '
                           Volumen,
                           trim(continuo) continuo,
                           trim(A.LOAD_DATE) LOAD_DATE   
-                      from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MES a
-                      ,(select MAX(LOAD_DATE) LOAD_DATE from DEV_TOURISM_DB.STAGING.ST_FLX_NOCTURNO_MES) M
+                      from STAGING.ST_FLX_NOCTURNO_MES a
+                      ,(select MAX(LOAD_DATE) LOAD_DATE from STAGING.ST_FLX_NOCTURNO_MES) M
                     where a.load_date=m.load_date  
                       AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
                       AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
