@@ -18,7 +18,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(ProvinciaZonaDiariaDiaVisita) AS PLACE_PROVINCE_DES,        
                     trim(a.MUNICIPIOZONADIARIADIAVISITA)  PLACE_CITY_DES ,        
-                    'LugarActividad_DiaVisita' KPI_ID,
+                    ''LugarActividad_DiaVisita'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -27,8 +27,8 @@ EXECUTE IMMEDIATE '
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_MUNICIPIO_SEMANA) M
                 where
                 a.load_date=m.load_date  
-                AND (trim(CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 
                 union all
                 
@@ -40,7 +40,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(PROVINCIAZONADIARIAVISPERA) AS PLACE_PROVINCE_DES,        
                     trim(a.MUNICIPIOZONADIARIAvispera)  PLACE_CITY_DES,
-                    'LugarActividad_Vispera' KPI_ID,
+                    ''LugarActividad_Vispera'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -48,8 +48,8 @@ EXECUTE IMMEDIATE '
                 from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_MUNICIPIO_SEMANA a
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_MUNICIPIO_SEMANA) M
                 where a.load_date=m.load_date 
-                AND (trim(CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 
                 union all
                 
@@ -61,7 +61,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(provinciazonapernoctaciondiavisita) AS PLACE_PROVINCE_DES, 
                     trim(a.municipiozonapernoctaciondiavisita)  PLACE_CITY_DES,
-                    'LugarNoche_DiaVisita' KPI_ID,
+                    ''LugarNoche_DiaVisita'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -69,8 +69,8 @@ EXECUTE IMMEDIATE '
                 from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_MUNICIPIO_SEMANA a
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_MUNICIPIO_SEMANA) M
                 where a.load_date=m.load_date
-                AND (trim(CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'   
+                AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
                 union all
                 
                 select 
@@ -81,7 +81,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(PROVINCIAZONAPERNOCTACIONVISPERA) AS PLACE_PROVINCE_DES, 
                     trim(a.MUNICIPIOZONAPERNOCTACIONVISPERA)  PLACE_CITY_DES,
-                    'LugarNoche_Vispera' KPI_ID,
+                    ''LugarNoche_Vispera'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -89,8 +89,8 @@ EXECUTE IMMEDIATE '
                 from STAGING.ST_FLX_LUGARNOCHE_VISPERA_MUNICIPIO_SEMANA a
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_VISPERA_MUNICIPIO_SEMANA) M
                 where a.load_date=m.load_date
-                AND (trim(CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'   
+                AND (trim(CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''   
             ),
 
             CONTINUO AS (
@@ -102,7 +102,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(ProvinciaZonaDiariaDiaVisita) AS PLACE_PROVINCE_DES,        
                     trim(a.MUNICIPIOZONADIARIADIAVISITA)  PLACE_CITY_DES ,        
-                    'LugarActividad_DiaVisita' KPI_ID,
+                    ''LugarActividad_DiaVisita'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -111,8 +111,8 @@ EXECUTE IMMEDIATE '
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_MUNICIPIO_SEMANA) M
                 where
                 a.load_date=m.load_date  
-                AND (trim(CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 
                 union all
                 
@@ -124,7 +124,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(PROVINCIAZONADIARIAVISPERA) AS PLACE_PROVINCE_DES,        
                     trim(a.MUNICIPIOZONADIARIAvispera)  PLACE_CITY_DES,
-                    'LugarActividad_Vispera' KPI_ID,
+                    ''LugarActividad_Vispera'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -133,8 +133,8 @@ EXECUTE IMMEDIATE '
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_MUNICIPIO_SEMANA) M
                 where
                 a.load_date=m.load_date  
-                AND (trim(CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 
                 union all
                 
@@ -146,7 +146,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(provinciazonapernoctaciondiavisita) AS PLACE_PROVINCE_DES, 
                     trim(a.municipiozonapernoctaciondiavisita)  PLACE_CITY_DES,
-                    'LugarNoche_DiaVisita' KPI_ID,
+                    ''LugarNoche_DiaVisita'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -155,8 +155,8 @@ EXECUTE IMMEDIATE '
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_MUNICIPIO_SEMANA) M
                 where
                 a.load_date=m.load_date  
-                AND (trim(CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 
                 union all
                 
@@ -168,7 +168,7 @@ EXECUTE IMMEDIATE '
                     trim(NOMBREMUNICIPIO) NOMBREMUNICIPIO,
                     trim(PROVINCIAZONAPERNOCTACIONVISPERA) AS PLACE_PROVINCE_DES, 
                     trim(a.MUNICIPIOZONAPERNOCTACIONVISPERA)  PLACE_CITY_DES,
-                    'LugarNoche_Vispera' KPI_ID,
+                    ''LugarNoche_Vispera'' KPI_ID,
                     Volumen,
                     trim(continuo) continuo,
                     trim(A.LOAD_DATE) LOAD_DATE,
@@ -177,53 +177,53 @@ EXECUTE IMMEDIATE '
                 ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_VISPERA_MUNICIPIO_SEMANA) M
                 where
                 a.load_date=m.load_date  
-                AND (trim(CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                AND (trim(CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
             ),
 
             TOTAL AS (
                 SELECT 
-                    SUBSTRING(SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5)) = 1 THEN '0' || SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) 
+                    SUBSTRING(SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5)) = 1 THEN ''0'' || SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) 
                         ELSE SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) END)  AS WEEK_YEAR_KEY,
                     zonaobservacion ZONE_ID,
                     origen VISITOR_ORIGIN_ID,
                     categoriadelvisitante VISITOR_CATEGORY_ID,
                     NombreMunicipio  CITY_DES,
                     DECODE(PLACE_PROVINCE_DES, 
-                        'Alicante', 'Alicante/Alacant',
-                        'Castellón', 'Castellón/Castelló',
-                        'Illes Balears', 'Islas Baleares',
-                        'Valencia', 'Valencia/València', 
+                        ''Alicante'', ''Alicante/Alacant'',
+                        ''Castellón'', ''Castellón/Castelló'',
+                        ''Illes Balears'', ''Islas Baleares'',
+                        ''Valencia'', ''Valencia/València'', 
                     PLACE_PROVINCE_DES) AS PLACE_PROVINCE_DES,
                     PLACE_CITY_DES,
                     KPI_ID,
                     Volumen KPI_VALUE_NUM ,
                     continuo,
                     LOAD_DATE,
-                    REPLACE(FILE_NAME, 'San_Bartolome_de_Tirajana_Municipio_', 'San_Bartolome_de_Tirajana_Municipio' ) AS FILE_NAME
+                    REPLACE(FILE_NAME, ''San_Bartolome_de_Tirajana_Municipio_'', ''San_Bartolome_de_Tirajana_Municipio'' ) AS FILE_NAME
                 FROM CONSOLIDADO
                 
                 UNION ALL
                 
                 SELECT 
-                    SUBSTRING(C.SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5)) = 1 THEN '0' || SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) 
+                    SUBSTRING(C.SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5)) = 1 THEN ''0'' || SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) 
                         ELSE SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) END) AS WEEK_YEAR_KEY,	
                     C.zonaobservacion ZONE_ID,
                     C.origen VISITOR_ORIGIN_ID,
                     C.categoriadelvisitante VISITOR_CATEGORY_ID,
                     C.NombreMunicipio  CITY_DES,
                     DECODE(C.PLACE_PROVINCE_DES, 
-                        'Alicante', 'Alicante/Alacant',
-                        'Castellón', 'Castellón/Castelló',
-                        'Illes Balears', 'Islas Baleares',
-                        'Valencia', 'Valencia/València', 
+                        ''Alicante'', ''Alicante/Alacant'',
+                        ''Castellón'', ''Castellón/Castelló'',
+                        ''Illes Balears'', ''Islas Baleares'',
+                        ''Valencia'', ''Valencia/València'', 
                     C.PLACE_PROVINCE_DES) AS PLACE_PROVINCE_DES,
                     C.PLACE_CITY_DES,
                     C.KPI_ID,
                     C.Volumen KPI_VALUE_NUM ,
                     C.continuo,
                     C.LOAD_DATE,
-                    REPLACE(C.FILE_NAME, 'San_Bartolome_de_Tirajana_Municipio_', 'San_Bartolome_de_Tirajana_Municipio' ) AS FILE_NAME
+                    REPLACE(C.FILE_NAME, ''San_Bartolome_de_Tirajana_Municipio_'', ''San_Bartolome_de_Tirajana_Municipio'' ) AS FILE_NAME
                 FROM CONTINUO C
                 LEFT JOIN CONSOLIDADO NC
                 ON C.SEMANA = NC.SEMANA
@@ -818,7 +818,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaDiariaDiaVisita) AS PLACE_PROVINCE_DES,        
                         trim(MUNICIPIOZONADIARIADIAVISITA) AS PLACE_CITY_DES ,        
-                        'LugarActividad_DiaVisita' KPI_ID,
+                        ''LugarActividad_DiaVisita'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -827,8 +827,8 @@ EXECUTE IMMEDIATE '
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_NACIONALIDAD_SEMANA) M
                     where
                     a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                    AND (trim(A.CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                     
                     union all
                     
@@ -840,7 +840,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaDiariaVispera) AS PLACE_PROVINCE_DES,        
                         trim(a.MUNICIPIOZONADIARIAVISPERA)  PLACE_CITY_DES,
-                        'LugarActividad_Vispera' KPI_ID,
+                        ''LugarActividad_Vispera'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -848,8 +848,8 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_NACIONALIDAD_SEMANA) M
                     where a.load_date=m.load_date 
-                    AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                    AND (trim(A.CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                     
                     union all
                     
@@ -861,7 +861,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaPernoctacionDiaVisita) AS PLACE_PROVINCE_DES, 
                         trim(a.MUNICIPIOZONAPERNOCTACIONDIAVISITA)  PLACE_CITY_DES,
-                        'LugarNoche_DiaVisita' KPI_ID,
+                        ''LugarNoche_DiaVisita'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -869,8 +869,8 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_NACIONALIDAD_SEMANA) M
                     where a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                    AND (trim(A.CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                     
                     union all
                     
@@ -882,7 +882,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaPernoctacionVispera) AS PLACE_PROVINCE_DES, 
                         trim(a.MUNICIPIOZONAPERNOCTACIONVISPERA)  PLACE_CITY_DES,
-                        'LugarNoche_Vispera' KPI_ID,
+                        ''LugarNoche_Vispera'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -890,8 +890,8 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARNOCHE_VISPERA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_VISPERA_NACIONALIDAD_SEMANA) M
                     where  a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'nc' AND FILE_NAME NOT LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'
+                    AND (trim(A.CONTINUO) = ''nc'' AND FILE_NAME NOT LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''
                 ),
 
                 CONTINUO AS (
@@ -903,7 +903,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaDiariaDiaVisita) AS PLACE_PROVINCE_DES,        
                         trim(a.MUNICIPIOZONADIARIADIAVISITA)  PLACE_CITY_DES ,        
-                        'LugarActividad_DiaVisita' KPI_ID,
+                        ''LugarActividad_DiaVisita'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -912,8 +912,8 @@ EXECUTE IMMEDIATE '
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_DIAVISITA_NACIONALIDAD_SEMANA) M
                     where
                     a.load_date=m.load_date  
-                    AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'    
+                    AND (trim(A.CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''    
                     
                     union all
                     
@@ -925,7 +925,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaDiariaVispera) AS PLACE_PROVINCE_DES,        
                         trim(a.MUNICIPIOZONADIARIAVISPERA)  PLACE_CITY_DES,
-                        'LugarActividad_Vispera' KPI_ID,
+                        ''LugarActividad_Vispera'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -933,8 +933,8 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARACTIVIDAD_VISPERA_NACIONALIDAD_SEMANA) M
                     where a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'    
+                    AND (trim(A.CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''    
                     
                     union all
                     
@@ -946,7 +946,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaPernoctacionDiaVisita) AS PLACE_PROVINCE_DES, 
                         trim(a.MUNICIPIOZONAPERNOCTACIONDIAVISITA)  PLACE_CITY_DES,
-                        'LugarNoche_DiaVisita' KPI_ID,
+                        ''LugarNoche_DiaVisita'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -954,8 +954,8 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_DIAVISITA_NACIONALIDAD_SEMANA) M
                     where a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'     
+                    AND (trim(A.CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''     
                     
                     union all
                     
@@ -967,7 +967,7 @@ EXECUTE IMMEDIATE '
                         trim(pais) AS pais,
                         trim(ProvinciaZonaPernoctacionVispera) AS PLACE_PROVINCE_DES, 
                         trim(a.MUNICIPIOZONAPERNOCTACIONVISPERA)  PLACE_CITY_DES,
-                        'LugarNoche_Vispera' KPI_ID,
+                        ''LugarNoche_Vispera'' KPI_ID,
                         Volumen,
                         trim(continuo) continuo,
                         trim(A.LOAD_DATE) LOAD_DATE,
@@ -975,53 +975,53 @@ EXECUTE IMMEDIATE '
                     from STAGING.ST_FLX_LUGARNOCHE_VISPERA_NACIONALIDAD_SEMANA a
                     ,(select MAX(LOAD_DATE) from STAGING.ST_FLX_LUGARNOCHE_VISPERA_NACIONALIDAD_SEMANA) M
                     where a.load_date=m.load_date
-                    AND (trim(A.CONTINUO) = 'c' OR FILE_NAME LIKE '%INVA-1080-6642%')
-                    AND FILE_NAME NOT LIKE '%INVA-1080-9999%'       
+                    AND (trim(A.CONTINUO) = ''c'' OR FILE_NAME LIKE ''%INVA-1080-6642%'')
+                    AND FILE_NAME NOT LIKE ''%INVA-1080-9999%''       
                 ),
 
                 TOTAL AS (
                     SELECT 
-                        SUBSTRING(SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5)) = 1 THEN '0' || SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) 
+                        SUBSTRING(SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5)) = 1 THEN ''0'' || SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) 
                             ELSE SUBSTRING(SEMANA, 6, LENGTH(SEMANA) - 5) END)  AS WEEK_YEAR_KEY,
                         zonaobservacion ZONE_ID,
                         origen VISITOR_ORIGIN_ID,
                         categoriadelvisitante VISITOR_CATEGORY_ID,
                         pais  country_des,
                         DECODE(PLACE_PROVINCE_DES, 
-                            'Alicante', 'Alicante/Alacant',
-                            'Castellón', 'Castellón/Castelló',
-                            'Illes Balears', 'Islas Baleares',
-                            'Valencia', 'Valencia/València', 
+                            ''Alicante'', ''Alicante/Alacant'',
+                            ''Castellón'', ''Castellón/Castelló'',
+                            ''Illes Balears'', ''Islas Baleares'',
+                            ''Valencia'', ''Valencia/València'', 
                         PLACE_PROVINCE_DES) AS PLACE_PROVINCE_DES,
                         PLACE_CITY_DES,
                         KPI_ID,
                         Volumen KPI_VALUE_NUM,
                         continuo,
                         LOAD_DATE ,
-                        REPLACE(FILE_NAME, 'San_Bartolome_de_Tirajana_Municipio_', 'San_Bartolome_de_Tirajana_Municipio' ) AS FILE_NAME
+                        REPLACE(FILE_NAME, ''San_Bartolome_de_Tirajana_Municipio_'', ''San_Bartolome_de_Tirajana_Municipio'' ) AS FILE_NAME
                     FROM CONSOLIDADO
                     
                     UNION ALL
                     
                     SELECT 
-                        SUBSTRING(C.SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5)) = 1 THEN '0' || SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) 
+                        SUBSTRING(C.SEMANA, 1, 4) || (CASE WHEN LENGTH(SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5)) = 1 THEN ''0'' || SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) 
                             ELSE SUBSTRING(C.SEMANA, 6, LENGTH(C.SEMANA) - 5) END) AS WEEK_YEAR_KEY,			
                         C.zonaobservacion ZONE_ID,
                         C.origen VISITOR_ORIGIN_ID,
                         C.categoriadelvisitante VISITOR_CATEGORY_ID,
                         C.pais  country_des,
                         DECODE(C.PLACE_PROVINCE_DES, 
-                            'Alicante', 'Alicante/Alacant',
-                            'Castellón', 'Castellón/Castelló',
-                            'Illes Balears', 'Islas Baleares',
-                            'Valencia', 'Valencia/València', 
+                            ''Alicante'', ''Alicante/Alacant'',
+                            ''Castellón'', ''Castellón/Castelló'',
+                            ''Illes Balears'', ''Islas Baleares'',
+                            ''Valencia'', ''Valencia/València'', 
                         C.PLACE_PROVINCE_DES) AS PLACE_PROVINCE_DES,
                         C.PLACE_CITY_DES,
                         C.KPI_ID,
                         C.Volumen KPI_VALUE_NUM,
                         C.continuo,
                         C.LOAD_DATE,
-                        REPLACE(C.FILE_NAME, 'San_Bartolome_de_Tirajana_Municipio_', 'San_Bartolome_de_Tirajana_Municipio' ) AS FILE_NAME
+                        REPLACE(C.FILE_NAME, ''San_Bartolome_de_Tirajana_Municipio_'', ''San_Bartolome_de_Tirajana_Municipio'' ) AS FILE_NAME
                     FROM CONTINUO C
                     LEFT JOIN CONSOLIDADO NC
                     ON C.SEMANA = NC.SEMANA
