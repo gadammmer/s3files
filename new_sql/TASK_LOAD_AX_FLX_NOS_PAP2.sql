@@ -5,7 +5,7 @@ BEGIN
           after PROCESS.LOAD_AX_FLX_LOS
           as BEGIN
 
-                 
+            TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_CITY_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_NOS_BY_CITY_PRE_ALL_TODAY
             (
             WITH CONSOLIDADO AS (
@@ -113,6 +113,7 @@ BEGIN
           -- Finalizar el proceso con un mensaje indicando el error
           RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_NOS_BY_CITY_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
           ELSE
+                TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_CITY_ALL_TODAY;
                 INSERT INTO PROCESS.AX_FLX_NOS_BY_CITY_ALL_TODAY
                 (
                 SELECT 
@@ -128,7 +129,7 @@ BEGIN
                 WHERE DUPLICATE_FILTER = 1
                 );
               
-                
+                TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_CITY;
                 INSERT INTO PROCESS.AX_FLX_NOS_BY_CITY
                 (
                 select 
@@ -178,7 +179,7 @@ BEGIN
             END IF;
             END;
 
-            
+            TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_COUNTRY_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_NOS_BY_COUNTRY_PRE_ALL_TODAY
             (
             WITH CONSOLIDADO AS (
@@ -288,6 +289,7 @@ BEGIN
             ELSE
                 
         */
+                TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_COUNTRY_ALL_TODAY;
                 INSERT INTO PROCESS.AX_FLX_NOS_BY_COUNTRY_ALL_TODAY
                 (
                 SELECT 
@@ -331,7 +333,7 @@ BEGIN
                 group by a.COUNTRY_DES
                 );
 */
-                
+                TRUNCATE TABLE PROCESS.AX_FLX_NOS_BY_COUNTRY;
                 INSERT INTO PROCESS.AX_FLX_NOS_BY_COUNTRY
                 (
                     select 
@@ -385,7 +387,7 @@ BEGIN
             --  END IF;
              -- END;
 
-              
+              TRUNCATE TABLE PROCESS.AX_FLX_NOS_PRE_ALL_TODAY;
               INSERT INTO PROCESS.AX_FLX_NOS_PRE_ALL_TODAY
               (
               WITH CONSOLIDADO AS (
@@ -488,7 +490,7 @@ BEGIN
               -- Finalizar el proceso con un mensaje indicando el error
               RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_NOS_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
               ELSE
-                  
+                  TRUNCATE TABLE PROCESS.AX_FLX_NOS_ALL_TODAY;
                   INSERT INTO PROCESS.AX_FLX_NOS_ALL_TODAY
                   (
                   SELECT 
@@ -515,6 +517,7 @@ BEGIN
                   LOAD_TIME TIMESTAMP_LTZ default current_timestamp()
                 );
 
+                TRUNCATE TABLE PROCESS.AX_FLX_NOS;
                 INSERT INTO PROCESS.AX_FLX_NOS
                 (
                 select 

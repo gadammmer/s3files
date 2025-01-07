@@ -5,7 +5,7 @@ EXECUTE IMMEDIATE '
           after PROCESS.LOAD_AX_FLX_PLACE_V2
           as BEGIN
 
-              
+              TRUNCATE TABLE PROCESS.AX_FLX_PLACE_WEEK_PRE_ALL_TODAY;
               INSERT INTO PROCESS.AX_FLX_PLACE_WEEK_PRE_ALL_TODAY
         (
         WITH CONSOLIDADO AS (
@@ -263,6 +263,7 @@ EXECUTE IMMEDIATE '
               RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_PLACE_WEEK_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
               ELSE
             */
+                TRUNCATE TABLE PROCESS.AX_FLX_PLACE_WEEK_ALL_TODAY;
                    INSERT INTO PROCESS.AX_FLX_PLACE_WEEK_ALL_TODAY
                     (
                     select 
@@ -323,7 +324,8 @@ EXECUTE IMMEDIATE '
                     );
                     */
                     
-                    INSERT INTO PROCESS.AX_FLX_PLACE_WEEK
+        TRUNCATE TABLE PROCESS.AX_FLX_PLACE_WEEK;
+        INSERT INTO PROCESS.AX_FLX_PLACE_WEEK
         (
         
         WITH CITY_PROV AS (
@@ -391,7 +393,7 @@ EXECUTE IMMEDIATE '
                     --END IF;
                     --END;
 
-                    
+                TRUNCATE TABLE PROCESS.AX_FLX_PLACE_PRE_ALL_TODAY;
                   INSERT INTO PROCESS.AX_FLX_PLACE_PRE_ALL_TODAY
                   (
                   WITH CONSOLIDADO AS (
@@ -637,6 +639,7 @@ EXECUTE IMMEDIATE '
                   RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_PLACE_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
                   ELSE
                 */      
+                    TRUNCATE TABLE PROCESS.AX_FLX_PLACE_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_PLACE_ALL_TODAY
                     (
                     SELECT 
@@ -687,7 +690,8 @@ EXECUTE IMMEDIATE '
                     WHERE tra.RAW_city_DES is null
                     group by a.place_city_des--, A.PLACE_PROVINCE_DES
                     );
-                              */        
+                              */   
+                    TRUNCATE TABLE PROCESS.AX_FLX_PLACE;
                     INSERT INTO PROCESS.AX_FLX_PLACE
                     (
                     

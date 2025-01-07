@@ -6,6 +6,7 @@ EXECUTE IMMEDIATE '
           after PROCESS.LOAD_AX_FLX_2H
           as BEGIN
 
+            TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE_MONTH_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_BY_AGE_MONTH_PRE_ALL_TODAY
             (
             WITH CONSOLIDADO AS (
@@ -158,6 +159,7 @@ EXECUTE IMMEDIATE '
                 RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_BY_AGE_MONTH_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
             ELSE
 
+                TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE_MONTH_ALL_TODAY;
                 INSERT INTO PROCESS.AX_FLX_BY_AGE_MONTH_ALL_TODAY
                 (
                 SELECT 
@@ -174,6 +176,7 @@ EXECUTE IMMEDIATE '
                 WHERE DUPLICATE_FILTER = 1
                 );
 
+                TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE_MONTH;
                 INSERT INTO PROCESS.AX_FLX_BY_AGE_MONTH
                 (
                 select 
@@ -230,6 +233,7 @@ EXECUTE IMMEDIATE '
                 END IF;
             END;
 
+            TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_BY_AGE_PRE_ALL_TODAY
             (
             WITH CONSOLIDADO AS (
@@ -439,6 +443,7 @@ EXECUTE IMMEDIATE '
                     RETURN ''Proceso cancelado: Hay duplicados en AX_FLX_BY_AGE_PRE_ALL_TODAY: '' || COMPROBACION_INICIAL;
                 ELSE
 
+                    TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_BY_AGE_ALL_TODAY
                     (
                     SELECT 
@@ -455,7 +460,7 @@ EXECUTE IMMEDIATE '
                     );
 
                     
-
+                    TRUNCATE TABLE PROCESS.AX_FLX_BY_AGE;
                     INSERT INTO PROCESS.AX_FLX_BY_AGE
                     (
                     select 

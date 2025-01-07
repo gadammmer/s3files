@@ -39,6 +39,7 @@ EXECUTE IMMEDIATE '
             schedule=''USING CRON  30 11 * * * Europe/Madrid''
             USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE=''XLARGE''
             as BEGIN
+                TRUNCATE TABLE PROCESS.AX_FLX_2H_PRE_ALL_TODAY;
                 INSERT INTO PROCESS.AX_FLX_2H_PRE_ALL_TODAY
                 (
                 WITH CONSOLIDADO AS (
@@ -141,6 +142,7 @@ EXECUTE IMMEDIATE '
                 -- Finalizar el proceso con un mensaje indicando el error
                 RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_2H_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
                 ELSE
+                    TRUNCATE TABLE PROCESS.AX_FLX_2H_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_2H_ALL_TODAY
                     (
                     SELECT 
@@ -155,6 +157,7 @@ EXECUTE IMMEDIATE '
                     WHERE DUPLICATE_FILTER = 1
                     );
 
+                    TRUNCATE TABLE PROCESS.AX_FLX_2H;
                     INSERT INTO PROCESS.AX_FLX_2H
                     (
                     select 
@@ -207,6 +210,7 @@ EXECUTE IMMEDIATE '
 
     ------------------------------------------------------------------
 
+    TRUNCATE TABLE PROCESS.AX_FLX_BY_CITY_2H_PRE_ALL_TODAY;
     INSERT INTO PROCESS.AX_FLX_BY_CITY_2H_PRE_ALL_TODAY
         (
         WITH CONSOLIDADO AS (
@@ -314,6 +318,7 @@ EXECUTE IMMEDIATE '
             -- Finalizar el proceso con un mensaje indicando el error
             RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_BY_CITY_2H_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
         ELSE
+            TRUNCATE TABLE PROCESS.AX_FLX_BY_CITY_2H_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_BY_CITY_2H_ALL_TODAY (
             SELECT 
                 CAST(PERIOD_KEY AS NUMBER(16,0)), -- Ajuste para evitar valores demasiado largos
@@ -328,7 +333,7 @@ EXECUTE IMMEDIATE '
             WHERE DUPLICATE_FILTER = 1
         );
         
-                
+        TRUNCATE TABLE PROCESS.AX_FLX_BY_CITY_2H;
         INSERT INTO PROCESS.AX_FLX_BY_CITY_2H (
             SELECT 
                 CAST(a.PERIOD_KEY AS NUMBER(16,0)), -- Ajuste para evitar valores demasiado largos
@@ -376,7 +381,7 @@ EXECUTE IMMEDIATE '
         END IF;
     END;
 
-
+            TRUNCATE TABLE PROCESS.AX_FLX_BY_COUNTRY_2H_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_BY_COUNTRY_2H_PRE_ALL_TODAY
 
             (
@@ -486,6 +491,7 @@ EXECUTE IMMEDIATE '
             RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_BY_COUNTRY_2H_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
             ELSE
 
+                    TRUNCATE TABLE PROCESS.AX_FLX_BY_COUNTRY_2H_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_BY_COUNTRY_2H_ALL_TODAY
                     (
                     SELECT 
@@ -527,6 +533,7 @@ EXECUTE IMMEDIATE '
                     group by a.COUNTRY_DES
                     );
 
+                    TRUNCATE TABLE PROCESS.AX_FLX_BY_COUNTRY_2H;
                     INSERT INTO PROCESS.AX_FLX_BY_COUNTRY_2H
                     (
                     select 

@@ -5,6 +5,7 @@ BEGIN
           after PROCESS.LOAD_AX_FLX_BY_CITY
           as BEGIN
               
+              TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER_MONTH_PRE_ALL_TODAY;
               INSERT INTO PROCESS.AX_FLX_BY_GENDER_MONTH_PRE_ALL_TODAY
               (
 
@@ -153,7 +154,7 @@ BEGIN
               RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_BY_GENDER_MONTH_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
               ELSE
 
-
+                    TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER_MONTH_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_BY_GENDER_MONTH_ALL_TODAY
                     (
                     SELECT 
@@ -170,7 +171,7 @@ BEGIN
                     WHERE DUPLICATE_FILTER = 1
                     );
             
-                              
+                  TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER_MONTH;
                   INSERT INTO PROCESS.AX_FLX_BY_GENDER_MONTH
                   (
                   select 
@@ -240,7 +241,7 @@ BEGIN
               END IF;
               END;
 
-              
+              TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER_PRE_ALL_TODAY;
               INSERT INTO PROCESS.AX_FLX_BY_GENDER_PRE_ALL_TODAY
               (
               WITH CONSOLIDADO AS (
@@ -457,6 +458,7 @@ BEGIN
               RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_BY_GENDER_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
               ELSE
 
+                TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER_ALL_TODAY;
                     INSERT INTO PROCESS.AX_FLX_BY_GENDER_ALL_TODAY
                     (
                     SELECT 
@@ -472,6 +474,7 @@ BEGIN
                     WHERE DUPLICATE_FILTER = 1
                     );
        
+                  TRUNCATE TABLE PROCESS.AX_FLX_BY_GENDER;
                   INSERT INTO PROCESS.AX_FLX_BY_GENDER
                   (
                   select 
@@ -529,7 +532,7 @@ BEGIN
             END IF;
             END;
 
-            
+            TRUNCATE TABLE PROCESS.AX_FLX_PRE_ALL_TODAY;
             INSERT INTO PROCESS.AX_FLX_PRE_ALL_TODAY
             (
 
@@ -736,6 +739,7 @@ BEGIN
             -- Finalizar el proceso con un mensaje indicando el error
             RETURN ''Proceso cancelado: Se detectaron duplicados en AX_FLX_PRE_ALL_TODAY. Total: '' || COMPROBACION_INICIAL;
             ELSE
+                TRUNCATE TABLE PROCESS.AX_FLX_ALL_TODAY;
                   INSERT INTO PROCESS.AX_FLX_ALL_TODAY
                   (
                   SELECT 
@@ -751,7 +755,7 @@ BEGIN
                   
                   );
 
-            
+        TRUNCATE TABLE PROCESS.AX_FLX_GENERAL;
         INSERT INTO PROCESS.AX_FLX_GENERAL
         (
         select 
