@@ -1,0 +1,12 @@
+ACCOMMODATION_TYPE_KEY,ACCOMMODATION_TYPE_ID,ACCOMMODATION_TYPE_DES
+-3,*********,No Informado
+1,Hoteles,Hoteles
+2,Hostales,Hostales
+3,Pensiones,Pensiones
+4,Apartamentos,Apartamentos
+5,Campings,Campings
+6,Rurales,Casas Rurales
+7,Albergues,Albergues
+8,Agencias,Agencias
+9,Turismo,Turismo Activo
+10,Estimación Otros,Estimación Otros
