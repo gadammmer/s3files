@@ -332,7 +332,7 @@ FROM (
         $2, 
         $3, 
         TO_TIMESTAMP_NTZ(CURRENT_TIMESTAMP)
-    FROM '@s3_stage/ive_dt/DM_IVE_KPI_MASTER_V4.csv'
+    FROM '@s3_stage/ive_dt/DM_IVE_KPI_MASTER_V5.csv'
 )
 FILE_FORMAT = 'csv_format_dm' 
 FORCE = TRUE 
