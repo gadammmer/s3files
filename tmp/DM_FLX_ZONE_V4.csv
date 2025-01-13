@@ -1,0 +1,24 @@
+ZONE_KEY,ZONE_ID,ZONE_DES,ZONE_TYPE_DES,LOAD_TIME
+-3,*********,No Informado,*********,2024-03-05T13:06:45.26Z
+1,Adeje - Arona Municipio,Adeje - Arona Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+2,Alicante Centro,Alicante Centro,SUBZONA,2024-03-05T13:06:45.26Z
+3,Alicante Municipio,Alicante Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+4,Alicante Provincia,Alicante Provincia,PROVINCIA,2024-03-05T13:06:45.26Z
+5,Benidorm Municipio,Benidorm Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+6,Calpe Municipio,Calpe Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+7,Calvia Municipio,Calvia Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+8,Castellon Municipio,Castellon Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+9,Castellon Provincia,Castellon Provincia,PROVINCIA,2024-03-05T13:06:45.26Z
+10,Elche,Elche,SUBZONA,2024-03-05T13:06:45.26Z
+11,Gandia Municipio,Gandia Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+12,Malaga Centro,Malaga Centro,SUBZONA,2024-03-05T13:06:45.26Z
+13,San Bartolome de Tirajana Municipio,San Bartolome de Tirajana Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+14,Sevilla Centro,Sevilla Centro,SUBZONA,2024-03-05T13:06:45.26Z
+15,Sitges Municipio,Sitges Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+16,Torremolinos Municipio,Torremolinos Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+17,Torrevieja Municipio,Torrevieja Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+18,Valencia Centro,Valencia Centro,SUBZONA,2024-03-05T13:06:45.26Z
+19,Valencia Comunidad Autonoma,Valencia Comunidad Autonoma,COMUNIDAD AUTÓNOMA,2024-03-05T13:06:45.26Z
+20,Valencia Municipio,Valencia Municipio,MUNICIPIO,2024-03-05T13:06:45.26Z
+21,Valencia Playa,Valencia Playa,SUBZONA,2024-03-05T13:06:45.26Z
+22,Valencia Provincia,Valencia Provincia,PROVINCIA,2024-03-05T13:06:45.26Z

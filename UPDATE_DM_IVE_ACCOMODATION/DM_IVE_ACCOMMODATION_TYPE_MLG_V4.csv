@@ -9,7 +9,7 @@ ACCOMMODATION_TYPE_KEY,ACCOMMODATION_TYPE_ID,LANGUAGE_KEY,ACCOMMODATION_TYPE_DES
 7,Albergues,1,Albergues
 8,Agencias,1,Agencias
 9,Turismo,1,Turismo Activo
-10,Estimación Otros,1,Estimación Otros
+10,Estimacion Otros,1,Estimacion Otros
 -3,*********,2,Not informed
 1,Hoteles,2,Hotels
 2,Hostales,2,Hostels
@@ -26,9 +26,9 @@ ACCOMMODATION_TYPE_KEY,ACCOMMODATION_TYPE_ID,LANGUAGE_KEY,ACCOMMODATION_TYPE_DES
 2,Hostales,3,Hostals
 3,Pensiones,3,Pensions
 4,Apartamentos,3,Apartaments
-5,Campings,3,Càmpings
+5,Campings,3,Campings
 6,Rurales,3,Cases Rurals
 7,Albergues,3,Albergs
-8,Agencias,3,Agències
+8,Agencias,3,Agencies
 9,Turismo,3,Turisme Actiu
-10,Estimació Uns altres,3,Estimació Uns altres
+10,Estimacio Uns altres,3,Estimacio Uns altres

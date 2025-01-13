@@ -1,5 +1,3 @@
---actualizar DM IVE ACCOMODATION TYPE
-
 create or replace TABLE SIT.DM_IVE_ACCOMMODATION_TYPE_MLG (
 	ACCOMMODATION_TYPE_KEY NUMBER(16,0),
 	ACCOMMODATION_TYPE_ID VARCHAR(100),
@@ -8,18 +6,20 @@ create or replace TABLE SIT.DM_IVE_ACCOMMODATION_TYPE_MLG (
 	LOAD_TIME TIMESTAMP_NTZ(9)
 );
 
-INSERT INTO SIT.DM_IVE_ACCOMMODATION_TYPE_MLG (ACCOMMODATION_TYPE_KEY, ACCOMMODATION_TYPE_ID, LANGUAGE_KEY, ACCOMMODATION_TYPE_DES, LOAD_TIME)
-FROM (
+select * from SIT.DM_IVE_ACCOMMODATION_TYPE_MLG ;
+
+copy INTO SIT.DM_IVE_ACCOMMODATION_TYPE_MLG (ACCOMMODATION_TYPE_KEY, ACCOMMODATION_TYPE_ID, LANGUAGE_KEY, ACCOMMODATION_TYPE_DES, LOAD_TIME)
+FROM(
     SELECT
         $1,
         $2,
         $3,
         $4,
         to_timestamp_ntz(current_timestamp)
-    FROM ''@s3_stage/ive_dt/DM_IVE_ACCOMMODATION_TYPE_MLG_V4.csv''
+    FROM '@s3_stage/ive_dt/DM_IVE_ACCOMMODATION_TYPE_MLG_V4.csv'
 )
-file_format = ''csv_format_dm''
-on_error = ''continue'';
+file_format = 'csv_format_dm'
+on_error = 'continue';
 
 create or replace TABLE SIT.DM_IVE_ACCOMMODATION_TYPE (
 	ACCOMMODATION_TYPE_KEY NUMBER(16,0),
@@ -28,20 +28,19 @@ create or replace TABLE SIT.DM_IVE_ACCOMMODATION_TYPE (
 	LOAD_TIME TIMESTAMP_NTZ(9)
 );
 
+select * from SIT.DM_IVE_ACCOMMODATION_TYPE;
 
-INSERT INTO SIT.DM_IVE_ACCOMMODATION_TYPE (ACCOMMODATION_TYPE_KEY, ACCOMMODATION_TYPE_ID, ACCOMMODATION_TYPE_DES, LOAD_TIME)
+copy INTO SIT.DM_IVE_ACCOMMODATION_TYPE (ACCOMMODATION_TYPE_KEY, ACCOMMODATION_TYPE_ID, ACCOMMODATION_TYPE_DES, LOAD_TIME)
 FROM (
     SELECT
         $1,
         $2,
         $3,
         to_timestamp_ntz(current_timestamp)
-    FROM ''@s3_stage/ive_dt/DM_IVE_ACCOMMODATION_TYPE_V2.csv''
+    FROM '@s3_stage/ive_dt/DM_IVE_ACCOMMODATION_TYPE_V2.csv'
 )
-file_format = ''csv_format_dm''
-on_error = ''continue'';
-
-
+file_format = 'csv_format_dm'
+on_error = 'continue';
 
 
 ----------------VISTA ALOJAMIENTO NO REGULADO FLX + INE -------------------------------
@@ -173,3 +172,7 @@ CREATE OR REPLACE VIEW SIT.VW_INE_FLX_TOURISTS AS (
         
         SELECT * FROM AX_EM
 );
+
+
+
+
