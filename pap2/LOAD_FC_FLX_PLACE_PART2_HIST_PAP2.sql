@@ -916,7 +916,7 @@ ELSE
     RETURN 'Proceso cancelado: Hay duplicados en AX_FLX_PLACE: ' || COMPROBACION_FINAL;	
     ELSE
 */
-                CREATE or REPLACE TABLE SIT.FC_FLX_PLACE
+        CREATE or REPLACE TABLE SIT.FC_FLX_PLACE
         (
           PERIOD_KEY  NUMBER (16,0) ,
           ZONE_KEY  NUMBER (16,0) ,

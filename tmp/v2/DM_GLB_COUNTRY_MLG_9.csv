@@ -274,10 +274,10 @@ COUNTRY_KEY,LANGUAGE_KEY,COUNTRY_DES,ID_INE
 272,1,"América Central, Caribe y Sudamérica",391303
 273,1,América,9965
 274,1,África,9947
-275,99975,América (sin EEUU),-2
-276,99974,Myanmar,-2
-277,99989,Total Centroamérica y Caribe,-2
-278,99973,Total Unión Europea,-2
+275,1,América (sin EEUU),-2
+276,1,Myanmar,-2
+277,1,Total Centroamérica y Caribe,-2
+278,1,Total Unión Europea,-2
 -3,2,Not Informed,-3
 1,2,Afghanistan,-2
 2,2,Albania,-2

@@ -224,7 +224,7 @@ FROM (
         $3, 
         $4, 
         TO_TIMESTAMP_NTZ(CURRENT_TIMESTAMP)
-    FROM '@s3_stage/global/DM_GLB_COUNTRY_MLG_V7.csv'
+    FROM '@s3_stage/global/DM_GLB_COUNTRY_MLG_V9.csv'
 )
 FILE_FORMAT = 'csv_format_dm' 
 FORCE = TRUE 

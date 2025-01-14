@@ -1,6 +1,5 @@
 TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_CITY_WEEK_PRE_ALL_TODAY;
 
-
 INSERT INTO PROCESS.AX_FLX_PLACE_BY_CITY_WEEK_PRE_ALL_TODAY
 (
 WITH CONSOLIDADO AS (
@@ -243,10 +242,8 @@ SELECT
      current_timestamp() LOAD_TIME
 FROM TOTAL
 );
-
             TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_CITY_WEEK_ALL_TODAY;
 
- 
         INSERT INTO PROCESS.AX_FLX_PLACE_BY_CITY_WEEK_ALL_TODAY
         (
         select 
@@ -353,7 +350,7 @@ FROM TOTAL
         );
           
 
-        TRUNCATE TABLE SIT.FC_FLX_PLACE_BY_CITY_WEEK ;
+        
         INSERT INTO SIT.FC_FLX_PLACE_BY_CITY_WEEK 
         (
         select 
@@ -609,7 +606,6 @@ SELECT
      current_timestamp() LOAD_TIME
 FROM TOTAL
 );
-------
             TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_CITY_ALL_TODAY;
         
         INSERT INTO PROCESS.AX_FLX_PLACE_BY_CITY_ALL_TODAY
@@ -628,7 +624,6 @@ FROM TOTAL
         FROM PROCESS.AX_FLX_PLACE_BY_CITY_PRE_ALL_TODAY     
         WHERE DUPLICATE_FILTER = 1
         );
-        
         
         
         TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_CITY;
@@ -976,7 +971,6 @@ SELECT
 FROM TOTAL
 );
 
-
     TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_COUNTRY_WEEK_ALL_TODAY;
     
     INSERT INTO PROCESS.AX_FLX_PLACE_BY_COUNTRY_WEEK_ALL_TODAY
@@ -1003,8 +997,7 @@ FROM TOTAL
             PLACE_CITY_DES,
             KPI_ID);
             
-               
-
+       
         TRUNCATE TABLE PROCESS.AX_FLX_PLACE_BY_COUNTRY_WEEK;
         
         INSERT INTO PROCESS.AX_FLX_PLACE_BY_COUNTRY_WEEK
@@ -1085,24 +1078,3 @@ FROM TOTAL
         and a.KPI_id=b.kpi_id(+)
         and b.WEEK_YEAR_KEY is null
         );
-
-    TRUNCATE TABLE SIT.FC_FLX_PLACE_BY_COUNTRY_WEEK;
-    
-    
-    INSERT INTO SIT.FC_FLX_PLACE_BY_COUNTRY_WEEK 
-    (
-    select 
-        a.WEEK_YEAR_KEY,
-        a.zone_key,
-        a.visitor_origin_key,
-        a.visitor_category_key,
-        a.COUNTRY_key,
-        PLACE_CITY_KEY, 
-        a.kpi_key,
-        a.KPI_VALUE_NUM,
-        LOAD_TIME
-    from 
-    PROCESS.AX_FLX_PLACE_BY_COUNTRY_WEEK a
-    where country_key>0
-    );
-
