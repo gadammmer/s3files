@@ -1,0 +1,97 @@
+﻿REGION_KEY,LANGUAGE_KEY,REGION_DES,ID_INE
+-3,1,No Informado,-3
+1,1,Andalucía,8997
+2,1,Aragón,8998
+3,1,Asturias,8999
+4,1,Islas Baleares,9000
+5,1,Canarias,9001
+6,1,Cantabria,9002
+7,1,Castilla Y León,9003
+8,1,Castilla La Mancha,9004
+9,1,Cataluña,9005
+10,1,Comunitat Valenciana,9006
+11,1,Extremadura,9007
+12,1,Galicia,9008
+13,1,Comunidad de Madrid,9009
+14,1,Murcia,9010
+15,1,Navarra,9011
+16,1,País Vasco,9012
+17,1,La Rioja,9013
+18,1,Ceuta,9015
+19,1,Melilla,8995
+20,1,Jadranska Hrvatska,-2
+21,1,Attiki,-2
+22,1,Ionia Nisia,-2
+23,1,Peloponnisos,-2
+24,1,Algarve,-2
+25,1,Lisboa,-2
+26,1,Otras Comunidades,285494
+27,1,Todas las Comunidades,16473
+28,1,España,19964
+29,1,Extranjero,19965
+30,1,Ceuta y Melilla,9014
+98,1,Tránsito,-2
+-3,2,Not Informed,-3
+1,2,Andalusia,8997
+2,2,Aragon,8998
+3,2,Asturias,8999
+4,2,Balearic Islands,9000
+5,2,Canary Islands,9001
+6,2,Cantabria,9002
+7,2,Castile and Leon,9003
+8,2,Castilla la Mancha,9004
+9,2,Catalonia,9005
+10,2,Community of Valencia,9006
+11,2,Estremadura,9007
+12,2,Galicia,9008
+13,2,Madrid's community,9009
+14,2,Murcia,9010
+15,2,Navarre,9011
+16,2,Basque Country,9012
+17,2,The Rioja,9013
+18,2,Ceuta,9015
+19,2,Melilla,8995
+20,2,Jadranska Hrvatska,-2
+21,2,Attiki,-2
+22,2,Ionia Nisia,-2
+23,2,Peloponnisos,-2
+24,2,Algarve,-2
+25,2,Lisbon,-2
+26,2,Other Communities,285494
+27,2,All Communities,16473
+28,2,Spain,19964
+29,2,Abroad,19965
+30,2,Ceuta and Melilla,9014
+98,2,Transit,-2
+-3,3,No Informat,-3
+1,3,Andalusia,8997
+2,3,Aragó,8998
+3,3,Astúries,8999
+4,3,Illes Balears,9000
+5,3,Canàries,9001
+6,3,Cantàbria,9002
+7,3,Castella i Lleó,9003
+8,3,Castella-la Manxa,9004
+9,3,Catalunya,9005
+10,3,Comunitat Valenciana,9006
+11,3,Extremadura,9007
+12,3,Galícia,9008
+13,3,Comunitat de Madrid,9009
+14,3,Múrcia,9010
+15,3,Navarra,9011
+16,3,País Basc,9012
+17,3,La Rioja,9013
+18,3,Ceuta,9015
+19,3,Melilla,8995
+20,3,Jadranska Hrvatska,-2
+21,3,Attiki,-2
+22,3,Ionia Nisia,-2
+23,3,Peloponnisos,-2
+24,3,Algarve,-2
+25,3,Lisboa,-2
+26,3,Altres Comunitats,285494
+27,3,Totes les comunitats,16473
+28,3,Espanya,19964
+29,3,L'Estranger,19965
+30,3,Ceuta i Melilla,9014
+98,3,Trànsit,-2
