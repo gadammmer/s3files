@@ -1,0 +1,118 @@
+KPI_KEY,LANGUAGE_KEY,KPI_ID,KPI_DES
+-3,1,*********,No Informado
+1,1,Numero,Número
+2,1,Plazas,Plazas
+3,1,CasasCentrales,Casas centrales
+4,1,Sucursales,Sucursales
+5,1,Sucursales_Dentro,Sucursales con sede en la Comunitat Valenciana
+6,1,Sucursales_Fuera,Sucursales con sede fuera de la Comunitat Valenciana
+7,1,Total,Total
+8,1,Acumulado en lo que va de año,Acumulado en lo que va de año
+9,1,Tasa de variación anual,Tasa de variación anual
+10,1,Tasa de variación acumulada,Tasa de variación acumulada
+11,1,Dato base,Dato base
+12,1,Viajeros,Viajeros
+13,1,Pernoctaciones,Pernoctaciones
+14,1,Estancia media,Estancia media
+15,1,Grado de ocupación por apartamentos en fin de semana,Grado de ocupación por apartamentos en fin de semana
+16,1,Número de parcelas,Número de parcelas
+17,1,Número de establecimientos abiertos estimados,Número de establecimientos abiertos estimados
+18,1,Grado de ocupación por plazas,Grado de ocupación por plazas
+19,1,Grado de ocupación de parcelas en fin de semana,Grado de ocupación de parcelas en fin de semana
+20,1,Número de habitaciones estimadas,Número de habitaciones estimadas
+21,1,Número de plazas estimadas,Número de plazas estimadas
+22,1,Grado de ocupación por habitaciones,Grado de ocupación por habitaciones
+23,1,Parcelas ocupadas,Parcelas ocupadas
+24,1,Grado de ocupación por parcelas,Grado de ocupación por parcelas
+25,1,Grado de ocupación por plazas en fin de semana,Grado de ocupación por plazas en fin de semana
+26,1,Personal empleado,Personal empleado
+27,1,Número de apartamentos estimados,Número de apartamentos estimados
+28,1,Grado de ocupación por apartamentos,Grado de ocupación por apartamentos
+29,1,Diario,Diario
+30,1,Llegada,Llegada
+31,1,Salida,Salida
+32,1,Nocturno,Nocturno
+33,1,LugarActividad_DiaVisita,LugarActividad_DiaVisita
+34,1,LugarActividad_Vispera,LugarActividad_Vispera
+35,1,LugarNoche_DiaVisita,LugarNoche_DiaVisita
+36,1,LugarNoche_Vispera,LugarNoche_Vispera
+37,1,Distribución porcentual de viajeros,Distribución porcentual de viajeros
+38,1,Distribución porcentual de pernoctaciones,Distribución porcentual de pernoctaciones
+-3,2,*********,Not Informed
+1,2,Numero,Number
+2,2,Plazas,Places
+3,2,CasasCentrales,Central houses
+4,2,Sucursales,Branch offices
+5,2,Sucursales_Dentro,Branches based in the Valencian Community
+6,2,Sucursales_Fuera,Branches based outside the Valencian Community
+7,2,Total,Total
+8,2,Acumulado en lo que va de año,Accumulated so far this year
+9,2,Tasa de variación anual,Annual variation rate
+10,2,Tasa de variación acumulada,Cumulative variation rate
+11,2,Dato base,Base data
+12,2,Viajeros,Travellers
+13,2,Pernoctaciones,Overnight stays
+14,2,Estancia media,Medium stay
+15,2,Grado de ocupación por apartamentos en fin de semana,Occupancy rate by apartments on weekends
+16,2,Número de parcelas,Number of plots
+17,2,Número de establecimientos abiertos estimados,Estimated number of open establishments
+18,2,Grado de ocupación por plazas,Occupancy rate by places
+19,2,Grado de ocupación de parcelas en fin de semana,Degree of occupancy of plots on weekends
+20,2,Número de habitaciones estimadas,Estimated number of rooms
+21,2,Número de plazas estimadas,Estimated number of places
+22,2,Grado de ocupación por habitaciones,Occupancy rate by room
+23,2,Parcelas ocupadas,Occupied plots
+24,2,Grado de ocupación por parcelas,Degree of occupancy by plots
+25,2,Grado de ocupación por plazas en fin de semana,Occupancy rate by places on weekends
+26,2,Personal empleado,Employed personnel
+27,2,Número de apartamentos estimados,Estimated number of apartments
+28,2,Grado de ocupación por apartamentos,Occupancy rate by apartments
+29,2,Diario,Daily
+30,2,Llegada,Arrival
+31,2,Salida,Departure
+32,2,Nocturno,Overnight
+33,2,LugarActividad_DiaVisita,Place_Activity_DayVisit
+34,2,LugarActividad_Vispera,PlaceActivity_Visit_Place
+35,2,LugarNoche_DiaVisita,PlaceOvernight_Day_Visit
+36,2,LugarNoche_Vispera,VenueOvernight_Visit
+37,2,Percentage distribution of travellers,Percentage distribution of travellers
+38,2,Percentage distribution of overnight stays,Percentage distribution of overnight stays
+-3,3,*********,No Informat
+1,3,Numero,Número
+2,3,Plazas,Places
+3,3,CasasCentrales,Cases centrals
+4,3,Sucursales,Sucursals
+5,3,Sucursales_Dentro,Sucursals amb seu a la Comunitat Valenciana
+6,3,Sucursales_Fuera,Sucursals amb seu fora de la Comunitat Valenciana
+7,3,Total,Total
+8,3,Acumulado en lo que va de año,Acumulat aquest any
+9,3,Tasa de variación anual,Taxa de variació anual
+10,3,Tasa de variación acumulada,Taxa de variació acumulada
+11,3,Dato base,Dada base
+12,3,Viajeros,Viatgers
+13,3,Pernoctaciones,Pernoctacions
+14,3,Estancia media,Estància mija
+15,3,Grado de ocupación por apartamentos en fin de semana,Grau d'ocupació per apartaments cap de setmana
+16,3,Número de parcelas,Nombre de parcel·les
+17,3,Número de establecimientos abiertos estimados,Nombre d’establiments oberts estimats
+18,3,Grado de ocupación por plazas,Grau d’ocupació per places
+19,3,Grado de ocupación de parcelas en fin de semana,Grau d'ocupació de parcel·les en cap de setmana
+20,3,Número de habitaciones estimadas,Nombre d'habitacions estimades
+21,3,Número de plazas estimadas,Nombre de places estimades
+22,3,Grado de ocupación por habitaciones,Grau d’ocupació per habitacions
+23,3,Parcelas ocupadas,Parcel·les ocupades
+24,3,Grado de ocupación por parcelas,Grau docupació per parcel·les
+25,3,Grado de ocupación por plazas en fin de semana,Grau docupació per places en cap de setmana
+26,3,Personal empleado,Personal empleat
+27,3,Número de apartamentos estimados,Nombre d'apartaments estimats
+28,3,Grado de ocupación por apartamentos,Grau d'ocupació per apartaments
+29,3,Diario,Diari
+30,3,Llegada,Arribada
+31,3,Salida,Eixida
+32,3,Nocturno,Nocturn
+33,3,LugarActividad_DiaVisita,LlocActivitat_DiaVisita
+34,3,LugarActividad_Vispera,LlocActivitat_Vespra
+35,3,LugarNoche_DiaVisita,LlocNit_DiaVisita
+36,3,LugarNoche_Vispera,LlocNit_Vespra
+37,3,Distribució percentual de viatgers,Distribució percentual de viatgers
+38,3,Distribució percentual de pernoctacions,Distribució percentual de pernoctacions
