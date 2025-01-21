@@ -1,0 +1,13 @@
+VISITOR_ORIGIN_KEY,LANGUAGE_KEY,VISITOR_ORIGIN_DES,VISITOR_ORIGIN_PARENT_DES,LOAD_TIME
+-3,1,No Informado,No Informado,
+1,1,Local,Nacionales,
+2,1,NoLocal,Nacionales,
+3,1,Extranjero,Extranjeros,
+-3,3,Not Informed,Not Informed,
+1,3,Local,National,
+2,3,NotLocal,National,
+3,3,Foreign,Foreign,
+-3,2,No Informat,No Informat,
+1,2,Local,Nacionals,
+2,2,NoLocal,Nacionals,
+3,2,Estranger,Estrangers,
