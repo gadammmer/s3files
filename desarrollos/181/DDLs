@@ -27,3 +27,6 @@ FROM (SELECT $1, $2, $3, $4, TO_TIMESTAMP_NTZ(CURRENT_TIMESTAMP) FROM '@s3_stage
 FILE_FORMAT = 'csv_format_dm' 
 FORCE = TRUE 
 ON_ERROR = 'CONTINUE';
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
