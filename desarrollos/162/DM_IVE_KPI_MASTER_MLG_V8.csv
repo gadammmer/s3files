@@ -1,4 +1,4 @@
-﻿KPI_KEY,LANGUAGE_KEY,KPI_ID,KPI_DES
+KPI_KEY,LANGUAGE_KEY,KPI_ID,KPI_DES
 -3,1,*********,No Informado
 1,1,Numero,Número
 2,1,Plazas,Plazas
@@ -38,6 +38,7 @@
 36,1,LugarNoche_Vispera,LugarNoche_Vispera
 37,1,Distribución porcentual de viajeros,Distribución porcentual de viajeros
 38,1,Distribución porcentual de pernoctaciones,Distribución porcentual de pernoctaciones
+39,1,Censo anual,Censo anual de población
 -3,2,*********,Not Informed
 1,2,Numero,Number
 2,2,Plazas,Places
@@ -77,6 +78,7 @@
 36,2,LugarNoche_Vispera,VenueOvernight_Visit
 37,2,Percentage distribution of travellers,Percentage distribution of travellers
 38,2,Percentage distribution of overnight stays,Percentage distribution of overnight stays
+39,2,Annual census,Annual population census
 -3,3,*********,No Informat
 1,3,Numero,Número
 2,3,Plazas,Places
@@ -116,3 +118,4 @@
 36,3,LugarNoche_Vispera,LlocNit_Vespra
 37,3,Distribució percentual de viatgers,Distribució percentual de viatgers
 38,3,Distribució percentual de pernoctacions,Distribució percentual de pernoctacions
+39,3,Cens anual,Cens anual de població

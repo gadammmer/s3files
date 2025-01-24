@@ -1,4 +1,4 @@
-﻿KPI_KEY,KPI_ID,KPI_DES,LOAD_TIME
+KPI_KEY,KPI_ID,KPI_DES,LOAD_TIME
 -3,*********,No Informado,
 1,Numero,Número,
 2,Plazas,Plazas,
@@ -38,3 +38,4 @@
 36,LugarNoche_Vispera,"Número de personas que han pasado la noche anterior en la zona o cerca, antes de visitar la zona",
 37,Distribución porcentual de viajeros,Distribución porcentual de viajeros,
 38,Distribución porcentual de pernoctaciones,Distribución porcentual de pernoctaciones,
+39,Censo anual,Censo anual de población,
