@@ -1,7 +1,9 @@
+EXECUTE IMMEDIATE '
+    BEGIN
 
 CREATE OR REPLACE TASK PROCESS.LOAD_AX_INE_EXP_TURISMO
-    schedule='USING CRON  30 11 * * * Europe/Madrid'
-	USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE='XLARGE'
+    schedule=''USING CRON  30 11 * * * Europe/Madrid''
+	USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE=''XLARGE''
 	as BEGIN
             ------------------------------- AX_INE_TURISMO_INTERNACIONAL -------------------------------
 
@@ -71,53 +73,53 @@ CREATE OR REPLACE TASK PROCESS.LOAD_AX_INE_EXP_TURISMO
             insert into PROCESS.AX_INE_EXP_TOURISM_ALL_TODAY 
                 (
                         SELECT 
-                            'INCOMING TOURISM' FILTER_ID,
-                            TO_NUMBER(to_char(A.FECHA,'YYYYMMDD')) PERIOD_KEY,
+                            ''INCOMING TOURISM'' FILTER_ID,
+                            TO_NUMBER(to_char(A.FECHA,''YYYYMMDD'')) PERIOD_KEY,
                             COD CODE_DES,
                             DECODE(CONCEPTO_TURISTICO,
-                                'Duración media de los viajes', 'Estancia media', 
-                                'Turistas', 'Viajeros',
+                                ''Duración media de los viajes'', ''Estancia media'', 
+                                ''Turistas'', ''Viajeros'',
                                 CONCEPTO_TURISTICO) KPI_ID,
-                            DECODE(TRANSLATE(UPPER(COMUNIDADES_Y_CIUDADES_AUTONOMAS), 'ÁÉÍÓÚ', 'AEIOU')
-                                        ,'ASTURIAS, PRINCIPADO DE','ASTURIAS'
-                                        ,'CASTILLA - LA MANCHA','CASTILLA LA MANCHA'
-                                        ,'BALEARS, ILLES','ISLAS BALEARES'
-                                        ,'NAVARRA, COMUNIDAD FORAL DE','NAVARRA'
-                                        ,'COMUNITAT VALENCIANA','VALENCIA'
-                                        ,'MADRID, COMUNIDAD DE','MADRID'
-                                        ,'RIOJA, LA','LA RIOJA'
-                                        ,'MURCIA, REGION DE','MURCIA'
-                                        ,NVL(TRANSLATE(UPPER(COMUNIDADES_Y_CIUDADES_AUTONOMAS), 'ÁÉÍÓÚ', 'AEIOU'),'**********')
+                            DECODE(TRANSLATE(UPPER(COMUNIDADES_Y_CIUDADES_AUTONOMAS), ''ÁÉÍÓÚ'', ''AEIOU'')
+                                        ,''ASTURIAS, PRINCIPADO DE'',''ASTURIAS''
+                                        ,''CASTILLA - LA MANCHA'',''CASTILLA LA MANCHA''
+                                        ,''BALEARS, ILLES'',''ISLAS BALEARES''
+                                        ,''NAVARRA, COMUNIDAD FORAL DE'',''NAVARRA''
+                                        ,''COMUNITAT VALENCIANA'',''VALENCIA''
+                                        ,''MADRID, COMUNIDAD DE'',''MADRID''
+                                        ,''RIOJA, LA'',''LA RIOJA''
+                                        ,''MURCIA, REGION DE'',''MURCIA''
+                                        ,NVL(TRANSLATE(UPPER(COMUNIDADES_Y_CIUDADES_AUTONOMAS), ''ÁÉÍÓÚ'', ''AEIOU''),''**********'')
                         ) AS REGION_DES,
                                 TRANSLATE(UPPER(DECODE(PROVINCIAS
-                                        ,'Asturias (Principado de)' ,'ASTURIAS'
-                                        ,'Baleares (Illes)' ,'ISLAS BALEARES'
-                                        ,'Murcia (Región de)','MURCIA'
-                                        ,'Madrid (Comunidad de)','MADRID'
-                                        ,'Navarra (Comunidad Foral de)','NAVARRA'
-                                        ,'Rioja (La)','LA RIOJA'
-                                        ,'Vizcaya','BIZKAIA'
-                                        ,'Santa Cruz Tenerife','SANTA CRUZ DE TENERIFE'
-                                        ,'Guipúzcoa','GIPUZKOA'
-                                        ,'Alicante/Alacant','ALICANTE'
-                                        ,'Araba/Álava','ALAVA'
-                                        ,'Balears, Illes','ISLAS BALEARES'
-                                        ,'Coruña, A','A CORUÑA'
-                                        ,'Valencia/València','VALENCIA'
-                                        ,'Palmas, Las','LAS PALMAS'
-                                        ,'Castellón/Castelló','CASTELLON'
-                                        ,'Rioja, La','LA RIOJA'
-                                        ,NVL(PROVINCIAS,'**********'))),'ÁÉÍÓÚÜ()-/','AEIOUU')  PROVINCE_DES
+                                        ,''Asturias (Principado de)'' ,''ASTURIAS''
+                                        ,''Baleares (Illes)'' ,''ISLAS BALEARES''
+                                        ,''Murcia (Región de)'',''MURCIA''
+                                        ,''Madrid (Comunidad de)'',''MADRID''
+                                        ,''Navarra (Comunidad Foral de)'',''NAVARRA''
+                                        ,''Rioja (La)'',''LA RIOJA''
+                                        ,''Vizcaya'',''BIZKAIA''
+                                        ,''Santa Cruz Tenerife'',''SANTA CRUZ DE TENERIFE''
+                                        ,''Guipúzcoa'',''GIPUZKOA''
+                                        ,''Alicante/Alacant'',''ALICANTE''
+                                        ,''Araba/Álava'',''ALAVA''
+                                        ,''Balears, Illes'',''ISLAS BALEARES''
+                                        ,''Coruña, A'',''A CORUÑA''
+                                        ,''Valencia/València'',''VALENCIA''
+                                        ,''Palmas, Las'',''LAS PALMAS''
+                                        ,''Castellón/Castelló'',''CASTELLON''
+                                        ,''Rioja, La'',''LA RIOJA''
+                                        ,NVL(PROVINCIAS,''**********''))),''ÁÉÍÓÚÜ()-/'',''AEIOUU'')  PROVINCE_DES
                                 ,COALESCE(PAISES, ZONAS_GEOGRAFICAS_DEL_RESTO_DEL_MUNDO, CONTINENTES) COUNTRY_DES
-                                ,NVL(RESIDENCIA_ORIGEN,'**********') RESIDENCE_ID
+                                ,NVL(RESIDENCIA_ORIGEN,''**********'') RESIDENCE_ID
                                 ,NVL(A.VALOR,0) KPI_VALUE_NUM
                                 ,TABLA
                                 ,CURRENT_TIMESTAMP(0) LOAD_TIME
                                 
                         FROM PROCESS.AX_INE_TURISMO_INTERNACIONAL A
                         
-                        WHERE UPPER(NVL(RESIDENCIA_ORIGEN,'**********'))!='TOTAL' --Eliminamos los totales 
-                        AND UPPER(NVL(TOTAL_NACIONAL,'**********'))!='TOTAL NACIONAL' --Eliminamos los totales 
+                        WHERE UPPER(NVL(RESIDENCIA_ORIGEN,''**********''))!=''TOTAL'' --Eliminamos los totales 
+                        AND UPPER(NVL(TOTAL_NACIONAL,''**********''))!=''TOTAL NACIONAL'' --Eliminamos los totales 
                         );
 
             -- ------RL_COUNTRY_TRANSLATOR----------------------------------------------------------------------------------------------------------------------------------
@@ -126,22 +128,22 @@ CREATE OR REPLACE TASK PROCESS.LOAD_AX_INE_EXP_TURISMO
 
             WITH AX_TABLE AS (
                 SELECT 
-                TRANSLATE(UPPER(COUNTRY_DES),'ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔ.;:-_/¿?¡!+*#& ,’', 'AEIOUAEIOUAEIOUO') TRA_COUNTRY_DES_JOIN,
+                TRANSLATE(UPPER(COUNTRY_DES),''ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔ.;:-_/¿?¡!+*#& ,’'', ''AEIOUAEIOUAEIOUO'') TRA_COUNTRY_DES_JOIN,
                 COUNTRY_DES 
                 FROM AX_INE_EXP_TOURISM_ALL_TODAY WHERE COUNTRY_DES IS NOT NULL),
                 
             DM_COUNTRY AS (
                 SELECT DISTINCT 
-                    TRANSLATE(UPPER(A.COUNTRY_DES),'ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔ.;:-_/¿?¡!+*#& ,’', 'AEIOUAEIOUAEIOUO') COUNTRY_DES_JOIN,
+                    TRANSLATE(UPPER(A.COUNTRY_DES),''ÁÉÍÓÚÀÈÌÒÙÄËÏÖÜÔ.;:-_/¿?¡!+*#& ,’'', ''AEIOUAEIOUAEIOUO'') COUNTRY_DES_JOIN,
                     A.COUNTRY_DES,
                     COUNTRY_ID 
                 FROM SIT.DM_GLB_COUNTRY A)
                 
             SELECT 
                 A.COUNTRY_DES RAW_COUNTRY_DES,
-                'AX_INE_EXP_TOURISM_ALL_TODAY' ORIGIN_DATA_ID,
-                NVL(MAX(B.COUNTRY_DES),'*********') COUNTRY_DES,
-                NVL(MAX(B.COUNTRY_ID),'***') COUNTRY_ID
+                ''AX_INE_EXP_TOURISM_ALL_TODAY'' ORIGIN_DATA_ID,
+                NVL(MAX(B.COUNTRY_DES),''*********'') COUNTRY_DES,
+                NVL(MAX(B.COUNTRY_ID),''***'') COUNTRY_ID
                 ,CURRENT_TIMESTAMP() LOAD_TIME 
             FROM AX_TABLE A
             LEFT JOIN DM_COUNTRY B
@@ -205,3 +207,4 @@ CREATE OR REPLACE TASK PROCESS.LOAD_AX_INE_EXP_TURISMO
                 );
 
     END;
+    END;';

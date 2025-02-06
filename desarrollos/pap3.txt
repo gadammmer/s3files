@@ -1,0 +1,7 @@
+162 -> Turismo rural
+170 -> Añadir columna Km2 a DM_FLX_ZONE
+171 -> Turismo receptor
+176 -> Actualizar tabla dinámica FWK Flight Searches
+181 -> Añadir nueva columna de agrupación de Visitor Origin
+182 -> Modelado Censo Poblacional
+183 -> Vista nivel CCAA (VW_INE_FLX_TOURISTS_REGION)
