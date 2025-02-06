@@ -1,0 +1,39 @@
+#!/bin/bash
+
+URL="https://download.flux-vision.orange-business.com/api_file/v1/INVA/"
+USER="aprieto@opensistemas.com"
+PASS="Anton\$12"
+
+# Nombre del archivo JSON
+ARCHIVO_JSON="flux_urls.json"
+ARCHIVO_JSON_TEMP="flux_urls_temp.json"
+ARCHIVO_CSV="tmp.csv"
+
+RUT_FLUX="./files/flux_staging/"
+
+cd "$RUT_FLUX" || exit
+
+# Descargar el JSON
+wget --no-check-certificate --user="$USER" --password="$PASS" -O "$ARCHIVO_JSON_TEMP" "$URL"
+
+# Verificar si el archivo JSON se ha actualizado
+if ! cmp -s "$ARCHIVO_JSON" "$ARCHIVO_JSON_TEMP"; then
+    echo "El archivo JSON se ha actualizado o descargado por primera vez."
+
+    # Reemplazar el archivo JSON anterior con el nuevo
+    mv "$ARCHIVO_JSON_TEMP" "$ARCHIVO_JSON"
+
+    # Convertir el archivo JSON a CSV
+    jq -r '.[] | ["https://\.url", .file_last_modified_date] | @csv' "$ARCHIVO_JSON" > "$ARCHIVO_CSV"
+
+    # Leer el archivo CSV línea por línea
+    while IFS=, read -r url fecha; do
+        # Extraer el nombre del archivo ZIP
+        nombre_archivo=$(basename "$url")
+        # Descargar el archivo ZIP
+        wget --no-check-certificate  "$url" -O "$nombre_archivo"
+    done < "$ARCHIVO_CSV"
+else
+    echo "El archivo JSON no ha sido actualizado."
+fi
+

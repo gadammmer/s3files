@@ -1,6 +1,0 @@
-SPEND_TYPE_KEY,SPEND_TYPE_ID,SPEND_TYPE_DES
--3,*********,No Informado
-1,"Duración media de los viajes","Duración media de los viajes"
-2,"Gasto medio diario por persona (euros)","Gasto medio diario por persona (euros)"
-3,"Gasto medio por persona (euros)","Gasto medio por persona (euros)"
-4,"Gasto total (millones de euros)","Gasto total (millones de euros)"

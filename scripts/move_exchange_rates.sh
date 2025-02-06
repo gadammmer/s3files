@@ -1,0 +1,3 @@
+curl "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml" > /opt/GEAOSP_PY_POC_TURISMO/scripts/files/exchange_rates/usd.xml
+/home/ec2-user/.local/bin/xq -r '.CompactData.DataSet.Series.Obs[] | [.["@TIME_PERIOD"], .["@OBS_VALUE"], .["@OBS_STATUS"], .["@OBS_CONF"]] | @csv' /opt/GEAOSP_PY_POC_TURISMO/scripts/files/exchange_rates/usd.xml > /opt/GEAOSP_PY_POC_TURISMO/scripts/files/exchange_rates/usd.csv
+aws s3 cp  /opt/GEAOSP_PY_POC_TURISMO/scripts/files/exchange_rates/usd.csv   s3://osp-bigm-orangedataprovider-pro-s3-bucket-eu-west-1-snowflake/innvatur/global/DM_GLB_EXCHANGE_RATES.csv
