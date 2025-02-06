@@ -1,9 +1,0 @@
-GATEWAY_TYPE_KEY,GATEWAY_TYPE_ID,GATEWAY_TYPE_DES,PARENT_GATEWAY_TYPE_KEY
--3,*********,No Informado,-3
-1,Aeropuerto,Aeropuerto,5
-2,Carretera,Carretera,5
-3,Aeropuerto Alicante - Elche,Aeropuerto Alicante - Elche,1
-4,Aeropuerto València,Aeropuerto València,1
-5,Total,Todas las vías de acceso,5
-6,Transporte marítimo,Transporte marítimo,5
-7,Transporte por ferrocarril,Transporte por ferrocarril,5
